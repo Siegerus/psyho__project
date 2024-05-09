@@ -1,0 +1,38 @@
+.button {
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    font-size: 25px;
+    line-height: 90%;
+    background-color: $main-color;
+    padding: 36px 65px;
+    border-radius: 15px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    border: none;
+    &_mt55 {
+        margin-top: 55px;
+        display: block;
+        text-decoration: none;
+    }
+    &_mt40 {
+        margin-top: 40px;
+    }
+    &_mt75 {
+        margin-top: 75px;
+    }
+    &_bg-white {
+        display: block;
+        text-decoration: none;
+        background-color: #fff;
+        color: $main-color;
+        border: 1px solid $main-color;
+        box-shadow: none;
+
+    }
+    &_succes {
+        display: block;
+        text-decoration: none;
+        cursor: pointer;
+    }
+}

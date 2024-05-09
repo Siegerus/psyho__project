@@ -1,0 +1,36 @@
+.direction {
+    padding-top: 185px;
+    position: relative;
+    &__subtitle {
+        margin-left: 305px;
+        font-size: 24px;
+        line-height: 160%;
+    }
+    &__wrapper {
+        padding-left: 92px;
+        padding-top: 64px;
+        display: grid;
+        grid-template-columns: 60px 840px;
+        grid-template-rows: repeat(4, minmax(210px, auto));
+        grid-auto-rows: auto;
+        column-gap: 50px;
+        row-gap: 101px;
+        justify-content: center;
+    }
+    &__header {
+        font-size: 25px;
+        line-height: 120%;
+        text-transform: uppercase;
+    }
+    &__body {
+        width: 650px;
+        margin-top: 20px;
+        font-size: 18px;
+        line-height: 160%;
+    }
+    &__number {
+        font-size: 30px;
+        line-height: 120%;
+        color: $main-color;
+    }
+}

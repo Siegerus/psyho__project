@@ -1,0 +1,90 @@
+.circle {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 500px;
+    width: 140px;
+    height: 140px;
+    background-color: $main-color;
+        &:before {
+            content: '';
+            position: absolute;
+            width: 160px;
+            height: 160px;
+            border-radius: 100%;
+            border: solid 1px $main-color;
+        }
+    &_promo {
+        position: absolute;
+        left: 148px;
+        top: 103px;
+        right: 0;
+            &:before {
+               left: 10px; 
+            }
+    } 
+    &_direction {
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        right: 145px;
+        top: 58px;
+        text-align: center;
+        font-size: 16px;
+        line-height: 110%;
+        color: #fff;
+        text-transform: uppercase;
+        cursor: pointer;
+        &:before {
+            width: 220px;
+            height: 220px;
+            left: 10px; 
+        } 
+    } 
+    &_diploms {
+        position: absolute;
+        right: 78px;
+        top: 39px;
+        width: 200px;
+        height: 174px;
+        background: url('../img/circle-photo.png');
+        opacity: 0.8;
+        z-index: 10;
+        &::before {
+            width: 194px;
+            height: 192px;
+            left: 23px;
+        }
+    }
+    &_register {
+        position: relative;
+        width: 200px;
+        height: 200px;
+        text-align: center;
+        font-size: 16px;
+        line-height: 110%;
+        color: #fff;
+        text-transform: uppercase;
+        cursor: pointer;
+        &:before {
+            width: 220px;
+            height: 220px;
+            left: 10px; 
+        }
+    }
+    &_footer {
+        position: relative;
+        width: 145px;
+        height: 145px;
+        &:before {
+            display: none;
+        }
+    }
+    &_modal {
+        margin: 0 auto;
+        &:before {
+            left: 10px;
+        }
+    }  
+}

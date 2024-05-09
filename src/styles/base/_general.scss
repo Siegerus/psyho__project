@@ -1,0 +1,30 @@
+h1, h2, h3, h4, h5, h6, ul {
+    margin: 0;
+    padding: 0;
+}
+* {
+    font-family: "ABeeZee", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    width: 1220px;
+    margin: 0 auto;
+    padding-left: 50px;
+    &_pl0 {
+        padding-left: 0;
+    }
+    &_1440 {
+        width: 1440px;
+        margin: 0 auto;
+        padding-left: 0;
+    }
+}
+.wrapper {
+    position: relative;
+}
+
+body.modal-open {
+    overflow: hidden;
+    padding-right: 17px;  
+}

@@ -1,0 +1,105 @@
+.formats {
+    padding-top: 175px;
+    &__flex-wrapper {
+        position: relative;
+        margin-bottom: 30px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        &:nth-child(2) {
+            margin-top: 96px;
+        }
+        &:nth-child(4) {
+            margin-bottom: 10px;
+        }
+        &:nth-child(5) {
+            margin-bottom: 20px;
+            min-height: 350px;
+        }
+    } 
+    &__overlay {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        width: 1220px;
+        height: 100%;
+        left: -50px;
+        top: -16px;
+        background-color: rgba(238, 237, 238, 0.6);
+        z-index: 10;
+        border: 1px solid $main-color;
+    }
+    &__unavailable {
+        margin-top: 55px;
+        width: 552px;
+        color: $main-color;
+        font-size: 47px;
+        line-height: 110%;
+        text-transform: uppercase;
+    }
+    &__item {
+        width: 490px;
+        padding: 28px 0;
+    }
+    &__header {
+        white-space: nowrap;
+    }
+    &__body {
+        width: 482px;
+        font-size: 12px;
+        line-height: 160%;
+        margin-top: 20px;
+    }
+    &__sign {
+        margin-right: 30px;
+        position: relative;
+        font-size: 18px;
+        line-height: 120%;
+        color:$main-color;
+        text-decoration: underline;
+        text-underline-offset: 3px;
+        align-self: center;
+        cursor: pointer;
+        &:before {
+            content: '';
+            background: url('../img/icons/arrow_sign.svg') center (center / cover) no-repeat;
+            position: absolute;
+            width: 22px;
+            height: 22px;
+            right: -37px;
+        }
+    }
+    &__time {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: center;
+        &-min {
+            font-size: 60px;
+            line-height: 110%; 
+            span {
+                font-size: 30px;
+            }
+        }
+        &-descr {
+            text-align: right;
+            font-size: 25px;
+            line-height: 120%;
+        }
+    }
+    &__price {
+        align-self: center;
+        color: $main-color;
+        &-descr {
+            text-align: right;
+            font-size: 25px;
+            line-height: 120%;
+        }
+        &-cost {
+            font-size: 60px;
+            line-height: 110%; 
+        }
+    }
+     
+}

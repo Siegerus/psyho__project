@@ -1,0 +1,13 @@
+@mixin arrows {
+    position: absolute;
+    width: 77px;
+    height: 84px;
+    border: 1px solid rgba(16, 16, 16, 0.6);
+    bottom: -12px;
+    right: 150px;
+    z-index: 10;
+    background-color: #eeedee;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
