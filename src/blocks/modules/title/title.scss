@@ -3,48 +3,60 @@
     line-height: 110%;
     text-transform: uppercase;
     margin: 0;
+
     &_red {
         padding-left: 29px;
         color: $main-color;
         border-left: 6px solid $main-color;
         text-transform: none;
     }
+
     &_nobrd {
         border: none;
         padding: 0;
     }
+
     &_fz40 {
         font-size: 40px;
     }
+
     &_fz30 {
         font-size: 30px;
         line-height: 120%;
     }
+
     &_fz100 {
         font-size: 100px;
     }
+
     &_fz24 {
         font-size: 24px;
         line-height: 160%;
     }
+
     &_fz60 {
         font-size: 60px;
         line-height: 90%;
     }
+
     &_fz45 {
         font-size: 45px;
         line-height: 90%;
     }
+
     &_fz42 {
         font-size: 42px;
         line-height: 120%;
-    } 
+    }
+
     &_tac {
         text-align: center;
     }
+
     &_mt35 {
         margin-top: 35px;
     }
+
     &_fz68 {
         font-size: 68px;
         line-height: 90%;

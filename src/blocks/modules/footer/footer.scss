@@ -1,71 +1,85 @@
 .footer {
-    padding: 148px 0 48px 0;
+    padding: 148px 0 48px;
+
     &__circle-wrap {
         margin-bottom: 23px;
         display: flex;
         align-items: center;
     }
+
     &__wrapper {
         display: flex;
-        justify-content: space-between;
         align-items: center;
+        justify-content: space-between;
     }
+
     &__label {
         margin-top: 75px;
-        width: 439px;
         align-self: flex-start;
+        width: 439px;
+
         a {
             text-decoration: none;
             text-transform: none;
-            color: #000000; 
+            color: #000;
         }
+
         h3 {
             text-align: center;
             text-transform: uppercase;
         }
     }
+
     &__nav {
-        padding-left: 14px;
-        width: 360px;
         display: flex;
         flex-direction: column;
+        width: 360px;
+        padding-left: 14px;
     }
+
     &__header {
         text-transform: uppercase;
     }
+
     &__list {
-        margin: 40px 0 94px 0px;
+        margin: 40px 0 94px;
         padding: 0;
         list-style-type: none;
+
         li {
             padding: 10px 0 10px 5px;
             font-size: 18px;
             line-height: 160%;
         }
+
         a {
             text-decoration: none;
             text-transform: none;
             color: #101010;
         }
     }
+
     &__copyright {
         font-size: 16px;
         line-height: 160%;
+
         span {
-            margin: 0 5px;;
+            margin: 0 5px;
         }
     }
+
     &__social {
         a {
+            margin: 0 15px;
             text-decoration: none;
             text-transform: none;
             color: #101010;
             font-size: 14px;
             line-height: 120%;
-            margin: 0 15px;
         }
     }
-    &__divider  {
+
+    &__divider {
         width: calc(100% - 120px);
         height: 1px;
         background-color: $main-color;

@@ -6,4 +6,4 @@ import "%modules%/modal/modal";
 import "%modules%/diploms/diploms";
 import "%modules%/reviews/reviews";
 import "%modules%/formats/formats";
-import "%modules%/forms/forms";
+import "%modules%/feed-form/feed-form";
