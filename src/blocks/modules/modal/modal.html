@@ -6,33 +6,30 @@
         <div class="modal__links modal__links_mt20">или напишите мне напрямую в Телеграм: <a href="https://t.me/telegram">@vozdraganova_online</a>
             / Инстаграм: <a href="https://www.instagram.com/">vozdraganova.online</a>
         </div>
-            <form action="" class="feedform">
+            <form action="#" class="feed-form" id="sign-form">
                 <label class="feed-form__label" for="sign-user">Ваше имя:</label>
                 <input id="sign-user" name="user" type="text" class="feed-form__input" placeholder="Введите Ваше имя">
-                <label class="feed-form__label" for="sign-phone">НОмер телефона:</label>
-                <input id="sign-phone" name="phone" type="tel" class="feed-form__input" placeholder="Введите номер">
+                <label class="feed-form__label feed-form__label_phone" for="sign-phone">НОмер телефона:</label>
+                <input id="sign-phone" name="phone"  type="tel" class="feed-form__input" placeholder="Введите номер">
                 <div class="feed-form__massager">
                     <div class="feed-form__label">Выберите месседжер для связи:</div>
-                    <div class="feed-form__radio-wrapper">
-                    <input class="feed-form__radio" type="radio" name="social-type" id="sign-telegram"> 
-                    <label class="feed-form__radio-label" for="sign-telegram">Telegram</label>
-                    <input class="feed-form__radio" type="radio" name="social-type" id="sign-Instagram"> 
-                    <label class="feed-form__radio-label" for="sign-Instagram">Instagram</label>
-                    <input class="feed-form__radio" type="radio" name="social-type" id="sign-WhatsApp"> 
-                    <label class="feed-form__radio-label" for="sign-WhatsApp">WhatsApp </label>
-                    <input class="feed-form__radio" type="radio" name="social-type" id="sign-Viber"> 
-                    <label class="feed-form__radio-label" for="sign-Viber">Viber</label>
+                        <div class="feed-form__radio-wrapper">
+                            <input class="feed-form__radio feed-form__radio_social" type="radio" name="social" value="Telegram" id="sign-telegram"> 
+                            <label class="feed-form__radio-label" for="sign-telegram">Telegram</label>
+                            <input class="feed-form__radio feed-form__radio_social" type="radio" name="social" value="Instagram" id="sign-Instagram"> 
+                            <label class="feed-form__radio-label" for="sign-Instagram">Instagram</label>
+                            <input class="feed-form__radio feed-form__radio_social" type="radio" name="social" value="WhatsApp" id="sign-WhatsApp"> 
+                            <label class="feed-form__radio-label" for="sign-WhatsApp">WhatsApp </label>
+                            <input class="feed-form__radio feed-form__radio_social" type="radio" name="social" 
+                            value="Viber" id="sign-Viber"> 
+                            <label class="feed-form__radio-label" for="sign-Viber">Viber</label>
+                        </div>
                 </div>
-                </div>
-                <input id="sign-nickname" class="feed-form__input feed-form__input_pt5" type="text/tel" placeholder="Как вас найти в Instagram (введите ваш ник или номер телефона)"></input>
-
+                <input id="sign-nickname" name="nickname" class="feed-form__input feed-form__input_pt5" type="text" placeholder="Как вас найти в Instagram (введите ваш ник или номер телефона)"></input>
                 <label for="sign-date" class="feed-form__label">Укажите желаемую дату консультации:</label>
-                <!-- <div class="calendar"></div> -->
-                    <input type="text" class="feed-form__input feed-form__input_date" id="sign-date">
-                
-
+                    <input type="text" name="date" class="feed-form__input feed-form__input_date" id="sign-date">
                 <label for="sign-time" class="feed-form__label">Укажите удобное для вас время:</label>
-                <input type="datetime" class="feed-form__input" id="sign-time" placeholder="Например: 14:30">
+                <input type="datetime" name="time" class="feed-form__input" id="sign-time" placeholder="Например: 14:30">
                 
 
                 <button id="modal-sign-button" class="button button_mt40">ОТправить заявку</button>
@@ -63,25 +60,25 @@
             в Телеграм: <a href="https://t.me/telegram">@vozdraganova_online</a>/ 
             Инстаграм:<a href="https://www.instagram.com/"> vozdraganova.online </a>
         </div>
-        <form action="" class="feedform">
+        <form action="#" class="feed-form">
             <label class="feed-form__label" for="reviews-user">Ваше имя:</label>
                 <input id="reviews-user" name="user" type="text" class="feed-form__input" placeholder="Введите Ваше имя">
-                <label class="feed-form__label" for="reviews-phone">НОмер телефона:</label>
+                <label class="feed-form__label feed-form__label_phone" for="reviews-phone">НОмер телефона:</label>
                 <input id="reviews-phone" name="phone" type="tel" class="feed-form__input" placeholder="Введите номер">
                 <div class="feed-form__massager">
                     <div class="feed-form__label">Выберите месседжер для связи:</div>
                     <div class="feed-form__radio-wrapper">
-                    <input class="feed-form__radio" type="radio" name="social-type" id="reviews-telegram"> 
+                    <input class="feed-form__radio feed-form__radio_social" type="radio" name="social-type" id="reviews-telegram"> 
                     <label class="feed-form__radio-label" for="reviews-telegram">Telegram</label>
-                    <input class="feed-form__radio" type="radio" name="social-type" id="reviews-Instagram"> 
+                    <input class="feed-form__radio feed-form__radio_social" type="radio" name="social-type" id="reviews-Instagram"> 
                     <label class="feed-form__radio-label" for="reviews-Instagram">Instagram</label>
-                    <input class="feed-form__radio" type="radio" name="social-type" id="reviews-WhatsApp"> 
+                    <input class="feed-form__radio feed-form__radio_social" type="radio" name="social-type" id="reviews-WhatsApp"> 
                     <label class="feed-form__radio-label" for="reviews-WhatsApp">WhatsApp </label>
-                    <input class="feed-form__radio" type="radio" name="social-type" id="reviews-Viber"> 
+                    <input class="feed-form__radio feed-form__radio_social" type="radio" name="social-type" id="reviews-Viber"> 
                     <label class="feed-form__radio-label" for="reviews-Viber">Viber</label>
                 </div>
                 </div>
-                <input id="sign-nickname" class="feed-form__input feed-form__input_pt5" type="text" placeholder="Как вас найти в Instagram (введите ваш ник или номер телефона)"></input>
+                <input id="reviews-nickname" name="nickname" class="feed-form__input feed-form__input_pt5" type="text" placeholder="Как вас найти в Instagram (введите ваш ник или номер телефона)"></input>
 
                 <div class="feed-form__descr">
                     (это необходимо только в случае, если ваш отзыв негативный, и вы бы хотели, чтоб с вами связались для разрешения ситуации) <br><br>
@@ -115,13 +112,13 @@
     <div class="modal__wrapper">
         <div class="modal__close"></div>
     <div class="modal modal_theme">
-        <form action="" class="feedform">
+        <form action="#" id="theme-form" class="feed-form">
             <h2 class="modal__title title title_red title_nobrd title_fz45">Темы встреч</h2>
             <div class="modal__links modal__links_mt20">
                 или напишите мне напрямую в Телеграм: <a href="https://t.me/telegram">@vozdraganova_online</a>/ <a href="https://www.instagram.com/">Инстаграм: vozdraganova.online </a>
             </div>
             <div class="feed-form__label">Выберите тему:</div>
-            <input type="radio" id="first-theme-radio" class="theme-radio" name="selected-theme">
+            <input type="radio" id="first-theme-radio" class="theme-radio" name="theme">
             <label class="feed-form__radio-block" for="first-theme-radio">
                 <div class="feed-form__item">
                     <div class="feed-form__item-body">
@@ -144,7 +141,8 @@
                     <div class="feed-form__item-img"><img src="img/modal/theme.png" alt="theme"></div>
                 </div>
             </label>
-            <input type="radio" id="second-theme-radio" class="theme-radio" name="selected-theme">
+            <div class="feed-form__error-box"></div>
+            <input type="radio" id="second-theme-radio" class="theme-radio" name="theme">
             <label class="feed-form__radio-block" for="second-theme-radio">
                 <div class="feed-form__item">
                     <div class="feed-form__item-body">
@@ -172,17 +170,17 @@
             <div class="feed-form__massager">
                 <div class="feed-form__label">Выберите месседжер для связи:</div>
                 <div class="feed-form__radio-wrapper">
-                <input class="feed-form__radio" type="radio" name="social-type" id="theme-telegram"> 
+                <input class="feed-form__radio feed-form__radio_social" type="radio" name="social-type" id="theme-telegram"> 
                 <label class="feed-form__radio-label" for="theme-telegram">Telegram</label>
-                <input class="feed-form__radio" type="radio" name="social-type" id="theme-Instagram"> 
+                <input class="feed-form__radio feed-form__radio_social" type="radio" name="social-type" id="theme-Instagram"> 
                 <label class="feed-form__radio-label" for="theme-Instagram">Instagram</label>
-                <input class="feed-form__radio" type="radio" name="social-type" id="theme-WhatsApp"> 
+                <input class="feed-form__radio feed-form__radio_social" type="radio" name="social-type" id="theme-WhatsApp"> 
                 <label class="feed-form__radio-label" for="theme-WhatsApp">WhatsApp </label>
-                <input class="feed-form__radio" type="radio" name="social-type" id="theme-Viber"> 
+                <input class="feed-form__radio feed-form__radio_social" type="radio" name="social-type" id="theme-Viber"> 
                 <label class="feed-form__radio-label" for="theme-Viber">Viber</label>
             </div>
             </div>
-            <input id="theme-nickname" class="feed-form__input feed-form__input_pt5" type="text" placeholder="Как вас найти в Instagram (введите ваш ник или номер телефона)"></input>
+            <input id="theme-nickname" name="nickname" class="feed-form__input feed-form__input_pt5" type="text" placeholder="Как вас найти в Instagram (введите ваш ник или номер телефона)"></input>
 
             <label class="feed-form__label" for="theme-mail">Ваш email:</label>
             <input id="theme-mail" name="mail" type="email" class="feed-form__input" placeholder="Введите Ваш email">
@@ -210,13 +208,13 @@
     <div class="modal__wrapper">
         <div class="modal__close"></div>
         <div class="modal modal_instructions">
-            <form action="" class="feedform">
+            <form action="#" id="instructions-form" class="feed-form">
                 <h2 class="modal__title title title_red title_nobrd title_fz45">Инструкции <span>(в записи)</span></h2>
                 <div class="modal__links modal__links_mt20">
                     или напишите мне напрямую в Телеграм: <a href="#">@vozdraganova_online</a>/ <a href="https://www.instagram.com/">Инстаграм: vozdraganova.online </a>
                 </div>
                 <div class="feed-form__label">Выберите тему:</div>
-                <input type="radio" id="first-instruction-radio" class="instructions-radio"  name="selected-instruction">
+                <input type="radio" id="first-instruction-radio" class="instructions-radio"  name="instruction">
                 <label class="feed-form__radio-block" for="first-instruction-radio">
                     <div class="feed-form__item feed-form__item_instruction">
                         <div class="feed-form__item-body">
@@ -240,7 +238,7 @@
                         <div class="feed-form__item-img"><img src="img/modal/instruction_alarm.png" alt="instruction"></div>
                     </div>
                 </label>
-                <input type="radio" id="second-instruction-radio" class="instructions-radio" name="selected-instruction">
+                <input type="radio" id="second-instruction-radio" class="instructions-radio" name="instruction">
                 <label class="feed-form__radio-block" for="second-instruction-radio">
                     <div class="feed-form__item">
                         <div class="feed-form__item-body">
@@ -270,17 +268,17 @@
                 <div class="feed-form__massager">
                     <div class="feed-form__label">Выберите месседжер для связи:</div>
                     <div class="feed-form__radio-wrapper">
-                    <input class="feed-form__radio" type="radio" name="social-type" id="theme-telegram"> 
+                    <input class="feed-form__radio feed-form__radio_social" type="radio" name="social-type" id="theme-telegram"> 
                     <label class="feed-form__radio-label" for="theme-telegram">Telegram</label>
-                    <input class="feed-form__radio" type="radio" name="social-type" id="theme-Instagram"> 
+                    <input class="feed-form__radio feed-form__radio_social" type="radio" name="social-type" id="theme-Instagram"> 
                     <label class="feed-form__radio-label" for="theme-Instagram">Instagram</label>
-                    <input class="feed-form__radio" type="radio" name="social-type" id="theme-WhatsApp"> 
+                    <input class="feed-form__radio feed-form__radio_social" type="radio" name="social-type" id="theme-WhatsApp"> 
                     <label class="feed-form__radio-label" for="theme-WhatsApp">WhatsApp </label>
-                    <input class="feed-form__radio" type="radio" name="social-type" id="theme-Viber"> 
+                    <input class="feed-form__radio feed-form__radio_social" type="radio" name="social-type" id="theme-Viber"> 
                     <label class="feed-form__radio-label" for="theme-Viber">Viber</label>
                 </div>
                 </div>
-                <input id="theme-nickname" class="feed-form__input feed-form__input_pt5" type="text" placeholder="Как вас найти в Instagram (введите ваш ник или номер телефона)"></input>
+                <input id="instructions-nickname" name="nickname" class="feed-form__input feed-form__input_pt5" type="text" placeholder="Как вас найти в  (введите ваш ник или номер телефона)"></input>
 
                 <label class="feed-form__label" for="theme-mail">Ваш email:</label>
                 <input id="theme-mail" name="mail" type="email" class="feed-form__input" placeholder="Введите Ваш email">

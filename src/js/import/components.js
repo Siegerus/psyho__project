@@ -1,3 +1,4 @@
 import "./components/slick.min";
 import "./components/jquery-ui";
-import "./components/jquery.validate.min";
+import "./components/additional-methods.min";
+import "./components/jquery.maskedinput.min";

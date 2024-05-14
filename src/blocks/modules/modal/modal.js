@@ -23,9 +23,13 @@ $(document).ready(function(){
 
     function closeModal(item) {
         $(item).on('click', function(){
-            $('.modal, .overlay').fadeOut('slow'),
-            $('body').removeClass('modal-open'),
+            $('.modal, .overlay').fadeOut('slow');
+            $('body').removeClass('modal-open');
             $('.aside__menu').removeClass('aside__menu_active');
+            $('#sign-nickname, #reviews-nickname, #theme-nickname, #instructions-nickname').attr('placeholder', 'Как вас найти в (введите ваш ник или номер телефона)');
+            $('form').trigger('reset');
+            $('label.error').css('display', 'none');
+            $('input#sign-nickname').prop('required', false);
         });
     };
     closeModal('.modal__close');
@@ -34,9 +38,7 @@ $(document).ready(function(){
     $('.button_succes').on('click', function(e) {
         e.preventDefault();
     }); 
-    $('#modal-instructions-button').on('click', function(){
-        $('.modal_instructions-succes .feed-form__radio-block').html($('.modal_instructions input.instructions-radio:checked + .feed-form__radio-block').html());
-    });
+   
 
 });
 

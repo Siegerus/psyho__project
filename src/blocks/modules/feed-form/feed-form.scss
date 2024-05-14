@@ -9,6 +9,10 @@
         letter-spacing: -0.02em;
         text-transform: uppercase;
         color: $main-color;
+
+        &_phone {
+            width: 250px;
+        }
     }
 
     &__input {
@@ -83,6 +87,11 @@
         border-radius: 15px;
     }
 
+    &__error-box {
+        display: block;
+        margin: 0 auto;
+    }
+
     &__item {
         display: flex;
         justify-content: space-between;
@@ -154,6 +163,9 @@ input[type="radio"] {
     accent-color: $main-color;
     outline: unset;
 }
+input#reviews-denied {
+    accent-color: rgb(0 0 0);
+}
 
 input#sign-date {
     border-top: none;
@@ -167,11 +179,29 @@ input#sign-date {
 
 input.instructions-radio, input.theme-radio {
     display: none;
+   
 }
+/* #theme-error {
+    margin-top: 20px;
+} */
 
 input.instructions-radio:checked + .feed-form__radio-block, input.theme-radio:checked + .feed-form__radio-block {
     border: 2px solid $main-color;
 }
+
+label.error {
+    margin-top: 12px;
+    color: $main-color;
+    font-size: 17px;
+    line-height: 90%;
+    letter-spacing: -0.02em;
+    text-align: center;
+
+}
+
+
+
+
 
 .ui-datepicker-header {
     background-color: $main-color;
