@@ -16,9 +16,9 @@ $(document).ready(function(){
         $('body').addClass('modal-open')
     })
 
-    $('#modal-instructions-button').on('click', function(){
+    /* $('#modal-instructions-button').on('click', function(){
         $('.modal_instructions-succes .feed-form__radio-block').html($('.modal_instructions input.instructions-radio:checked + .feed-form__radio-block').html());
-    });
+    }); */
     
     /* $('#modal-instructions-button').on('click', function(){
         $('.modal_instructions-succes, .overlay').fadeIn('slow')

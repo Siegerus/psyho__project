@@ -11,3 +11,23 @@
     justify-content: center;
     align-items: center;  
 }
+
+@mixin close-befafter {
+
+    &::before, &::after {
+        content: "";
+        position: absolute;
+        left: 15px;
+        width: 2px;
+        height: 33px;
+        background-color: $main-color;
+    }
+
+    &::before {
+        transform: rotate(45deg);
+    }
+
+    &::after {
+        transform: rotate(-45deg);
+    }
+}

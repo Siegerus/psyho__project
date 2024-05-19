@@ -4,20 +4,22 @@
     &__slider {
         position: relative;
         width: 966px;
-        margin: 0 0 0 26px;
-        margin-top: 42px;
+        margin: 42px 0 0 26px;  
+    }
 
-        img {
-            max-width: 100%;
-            max-height: 100%;
-            object-fit: contain;
-        }
+    &__img {
+        margin: 0 auto;
+        width: auto;
+        height: 689px;
+        object-fit: cover;
     }
 
     &__wrapper {
         position: relative;
     }
 }
+
+//slick
 
 .slick-arrow {
     border: none;
@@ -30,3 +32,34 @@
 .arrow_prev {
     right: 229px;
 }
+
+// popup
+
+
+.mfp-close {
+
+    img {
+        width: 25px;
+        height: 25px;
+    }
+}
+
+/* &::before, &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: auto;
+        right: 20px;
+        width: 1px;
+        height: 33px;
+        padding: 2px;
+        background-color: $main-color;
+    }
+
+    &::before {
+        transform: rotate(45deg);
+    }
+
+    &::after {
+        transform: rotate(-45deg);
+    } */

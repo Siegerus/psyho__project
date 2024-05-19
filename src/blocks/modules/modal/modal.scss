@@ -56,22 +56,7 @@
         opacity: 0.1;
         cursor: pointer;
 
-        &::before, &::after {
-            content: "";
-            position: absolute;
-            left: 15px;
-            width: 2px;
-            height: 33px;
-            background-color: $main-color;
-        }
-
-        &::before {
-            transform: rotate(45deg);
-        }
-
-        &::after {
-            transform: rotate(-45deg);
-        }
+        @include close-befafter;
     }
 
     &__title {

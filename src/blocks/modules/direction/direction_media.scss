@@ -1,0 +1,41 @@
+@media (max-width: 1439px) {
+    .container {
+        max-width: 1200px;
+    }
+    .direction {
+        padding-top: 130px;
+    }
+}
+@media (max-width: 1200px) {
+    .container {
+        max-width: 968px;
+
+    }
+    .direction {
+        &__header {
+            font-size: 23px;
+        }
+        &__wrapper {
+            grid-template-columns: 68px 750px;
+        }
+    }
+
+    
+}
+@media (max-width: 992px) {
+    .container {
+        max-width: 720px;
+    }
+}
+@media (max-width: 768px) {                     
+                                                     
+    .container {
+        max-width: 540px;
+    }
+}
+@media (max-width: 576px) {
+    .container {
+        max-width: 100%;
+        padding: 0 10px;
+    }
+}

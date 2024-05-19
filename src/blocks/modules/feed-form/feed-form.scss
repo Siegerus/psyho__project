@@ -40,7 +40,13 @@
 
         &_textarea {
             height: 200px;
-            padding-bottom: 161px;
+            padding: 25px 46px 161px 27px;
+            overflow: hidden;
+
+            &:focus {
+                outline: 2px solid rgba(16 16 16 / 45%);
+            }
+
         }
     }
 
@@ -75,10 +81,6 @@
         font-size: 15px;
         line-height: 90%;
         color: rgba(16 16 16 / 60%);
-
-        span {
-            color: $main-color;
-        }
     }
 
     &__radio-block {
@@ -89,17 +91,26 @@
 
     &__error-box {
         display: block;
-        margin: 0 auto;
+        margin-top: 20px;
+
+        &_denied {
+            margin-top: 0;
+        }
     }
 
     &__item {
         display: flex;
         justify-content: space-between;
+        
+        &-img {
+            max-width: 152px;
+        }
 
         img {
             width: 100%;
             height: 100%;
             object-fit: cover;
+            border-radius: 15px
         }
 
         &-body {
@@ -148,6 +159,10 @@
             span {
                 font-size: 15px;
                 color: rgba(16 16 16 / 45%);
+
+                span.red {
+                    color: $main-color;
+                }
             }
         }
     }
@@ -160,14 +175,23 @@ input {
 }
 
 input[type="radio"] {
+    background-color: #d9d9d9;;
     accent-color: $main-color;
     outline: unset;
+    border: 1px solid black;
+    
 }
 input#reviews-denied {
     accent-color: rgb(0 0 0);
 }
 
+#datepicker {
+    margin: 20px auto 30px auto;
+}
+
 input#sign-date {
+    margin: 40px auto 0 auto;
+    width: 340px;
     border-top: none;
     border-left: none;
     border-right: none;
@@ -175,15 +199,17 @@ input#sign-date {
     text-align: center;
     font-size: 36px;
     color: rgba(16 16 16 / 60%);
+
+    &:focus {
+        outline: none;
+        
+    }
 }
 
 input.instructions-radio, input.theme-radio {
     display: none;
    
 }
-/* #theme-error {
-    margin-top: 20px;
-} */
 
 input.instructions-radio:checked + .feed-form__radio-block, input.theme-radio:checked + .feed-form__radio-block {
     border: 2px solid $main-color;
@@ -195,13 +221,9 @@ label.error {
     font-size: 17px;
     line-height: 90%;
     letter-spacing: -0.02em;
-    text-align: center;
+    
 
 }
-
-
-
-
 
 .ui-datepicker-header {
     background-color: $main-color;
@@ -209,12 +231,37 @@ label.error {
     color: #fff;
 }
 
-a.ui-state-default {
-    background-color: #ffcbcb;
-    border-color: $main-color;
+a.ui-state-default .ui-widget-content {
+    color: rgb(16, 16, 16);
 }
 
-.ui-state-default {
+.ui-datepicker-other-month .ui-datepicker-unselectable .ui-state-disabled {
+    border: 1px solid rgba(16 16 16 / 60%);
+}
+
+.ui-state-default.ui-state-active {
     background-color: $main-color;
     border-color: $main-color;
 }
+
+.ui-widget-content .ui-state-highlight {
+    background-color: #f6f6f6;
+    border-color: #f6f6f6;
+}
+.ui-widget-content .ui-state-highlight {
+    color: $main-color;
+}
+
+.ui-widget-content .ui-state-highlight.ui-state-active {
+    background-color: #f6f6f6;
+    border-color: $main-color;
+}
+
+td[data-handler] {
+    border: 2px solid rgba(16 16 16 / 30%);
+}
+
+table th span {
+    color: rgba(16 16 16 / 60%);
+}
+
