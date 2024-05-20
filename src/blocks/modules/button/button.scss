@@ -11,6 +11,10 @@
     border-radius: 15px;
     box-shadow: 0 4px 4px 0 rgba(0 0 0 / 25%);
 
+    &:hover {
+        background-color: #ca4a41;
+    }
+
     &_mt55 {
         display: block;
         margin-top: 55px;

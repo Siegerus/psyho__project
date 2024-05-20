@@ -41,6 +41,11 @@
         text-transform: uppercase;
         cursor: pointer;
 
+        &:hover {
+            box-shadow: 3px 3px 20px $main-color; 
+            background-color: #ca4a41;
+        }
+
         &::before {
             left: 10px;
             width: 220px;
@@ -75,6 +80,11 @@
         color: #fff;
         text-transform: uppercase;
         cursor: pointer;
+
+        &:hover {
+            box-shadow: 3px 3px 20px $main-color; 
+            background-color: #ca4a41;
+        }
 
         &::before {
             left: 10px;

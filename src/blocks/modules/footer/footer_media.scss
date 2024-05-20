@@ -8,8 +8,28 @@
     .container {
         max-width: 968px;
     }
-    .whom {
-        padding-top: 120px;
+    .footer {
+        padding-top: 125px;
+        &__header {
+            font-size: 31px;
+        }
+        &__wrapper {
+            /* flex-direction: column;
+            align-items: flex-start; */
+        }
+        &__nav {
+            margin-top: 100px;
+        }
+
+        &__title {
+            font-size: 68px;
+            line-height: 0.9;
+        }
+
+        &__subtitle {
+            font-size: 24px;
+            line-height: 1.6;
+        }
     }
 
 }

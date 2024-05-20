@@ -103,6 +103,7 @@
         justify-content: space-between;
         
         &-img {
+            display: block;
             max-width: 152px;
         }
 
@@ -114,16 +115,19 @@
         }
 
         &-body {
+            display: block;
             padding: 30px 15px 30px 30px;
         }
 
         &-title {
+            display: block;
             font-size: 21px;
             line-height: 90%;
             margin-bottom: 10px;
         }
 
         &-date {
+            display: block;
             width: 220px;
             font-size: 18px;
             line-height: 150%;
@@ -131,12 +135,14 @@
             color: rgba(16 16 16 / 60%);
 
             span {
+                display: block;
                 font-size: 15px;
                 color: rgba(16 16 16 / 45%);
             }
         }
 
         &-duration {
+            display: block;
             width: 125px;
             font-size: 18px;
             line-height: 150%;
@@ -144,12 +150,14 @@
             color: rgba(16 16 16 / 60%);
 
             span {
+                display: block;
                 font-size: 15px;
                 color: rgba(16 16 16 / 45%);
             }
         }
 
         &-players {
+            display: block;
             width: 210px;
             font-size: 18px;
             line-height: 150%;
@@ -157,10 +165,12 @@
             color: rgba(16 16 16 / 60%);
 
             span {
+                display: block;
                 font-size: 15px;
                 color: rgba(16 16 16 / 45%);
 
                 span.red {
+                    display: block;
                     color: $main-color;
                 }
             }

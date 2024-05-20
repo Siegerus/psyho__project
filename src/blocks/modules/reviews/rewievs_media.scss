@@ -2,63 +2,60 @@
     .container {
         max-width: 1200px;
     }
-}
 
+}
 @media (max-width: 1200px) {
     .container {
         max-width: 968px;
     }
-
-    .circle {
-        &_direction {
-            top: -135px;
-
-            &:hover {
-                box-shadow: none; 
-                background-color: $main-color;
+    .reviews {
+        &__subtitle {
+            font-size: 24px;
+    
+            span {
+                font-size: 26px;
             }
         }
 
-        &_diploms {
-            right: 23px;
+        &__item {
+            margin-bottom: 90px;
+        }
+        &__content {
+            padding-right: 97px;
+            margin-top: 50px;
+            display: none;
+            flex-direction: column;
+            align-items: flex-start;
+    
+            &_active {
+                display: flex;
+            }
         }
 
     }
-
+    
 }
-
 @media (max-width: 992px) {
     .container {
         max-width: 720px;
     }
-    .circle {
-        &_direction {
-            top: -135px;
-    
-            &:hover {
-                box-shadow: none; 
-                background-color: $main-color;
-            }
-        }
-        &_register {
+    .reviews {
 
+        &__button {
             &:hover {
-                box-shadow: none; 
-                background-color: $main-color;
+                box-shadow: none;
+                background-color: #ffff;
             }
         }
     }
-
     
 }
-
 @media (max-width: 768px) {                     
                                                      
     .container {
         max-width: 540px;
     }
 }
-
 @media (max-width: 576px) {
     .container {
         max-width: 100%;

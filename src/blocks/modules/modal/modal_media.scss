@@ -8,14 +8,27 @@
     .container {
         max-width: 968px;
     }
-    .whom {
-        padding-top: 120px;
+    .modal {
+        &__title {
+            font-size: 45px;
+            line-height: 0.9;
+        }
     }
 
 }
 @media (max-width: 992px) {
     .container {
         max-width: 720px;
+    }
+    .header {
+        &__close {
+
+            &:hover {
+                border-radius: none;
+                box-shadow: none; 
+                background-color: $main-color;
+            }
+        }
     }
 }
 @media (max-width: 768px) {                     

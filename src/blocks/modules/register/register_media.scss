@@ -8,10 +8,13 @@
     .container {
         max-width: 968px;
     }
-    .whom {
-        padding-top: 120px;
+    .register {
+        &__wrapper {
+            justify-content: space-around;
+        }
     }
 
+    
 }
 @media (max-width: 992px) {
     .container {

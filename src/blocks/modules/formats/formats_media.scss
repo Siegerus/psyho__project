@@ -12,25 +12,116 @@
         max-width: 968px;
     }
     .formats {
-
-        &__flex-wrapper {
-            flex-direction: column;
-            align-items: center;
+        &__wrapper {
             justify-content: center;
+            grid-template-rows: auto;
+            margin-top: 85px;
+            row-gap: 60px;
         }
 
-        &__l-wrapper {
-            display: flex;
+        &__row-wrapper {
+            grid-template-columns: 850px;
+            grid-template-rows: repeat(2, auto);
+            grid-auto-rows: auto;
+            row-gap: 20px;
+        }
+
+        &__col-wrapper {
+            align-items: center;
+            justify-content: space-around;
+            justify-self: center;
+            width: 600px;
+        }
+        &__item {
+            justify-self: center;
+            width: 800px;
+        }
+        &__body {
+            /* width: 100%; */
+            width: 815px;
+            text-align: justify;
+            br {
+                display: none;
+            }
         }
         &__overlay {
 
         }
+        &__icon {
+            &_l-visible {
+                display: block;
+                margin-right: 10px;
+            }
+            &_l-hidden {
+                display: none;
+            }
+        }
+        &__header {
+            display: flex;
+            justify-content: flex-start;
+            font-size: 31px;
+            span {
+                font-size: 32px;
+                margin-left: 10px;
+            }
+        }
+        &__body {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+        &__sign {
+            font-size: 20px;
+            line-height: 1.2;
+            text-transform: uppercase;
+        }
+            
+        &__time {
+            align-items: center;
+    
+            &-min {
+                font-size: 36px;
+                line-height: 1.1;
+    
+                span {
+                    font-size: 36px;
+                }
+            }
+    
+            &-descr {
+                font-size: 20px;
+                line-height: 1.2;
+            }       
+        }
+        &__price {
+                
+            &-descr {
+                text-align: right;
+                font-size: 20px;
+                line-height: 1.2;
+            }
+    
+            &-cost {
+                font-size: 36px;
+                line-height: 1.1;
+            }
+        }
+
+        &__unavailable {
+            margin-top: 0;
+            font-size: 35px;
+            line-height: 1.1;
+            text-align: center;
+           
+        }
     } 
+
 }
 @media (max-width: 992px) {
     .container {
         max-width: 720px;
     }
+    
+ 
 }
 @media (max-width: 768px) {                     
                                                      
