@@ -15,21 +15,49 @@
             width: 966px;
             margin-left: 0; 
         }
-    
-        &__img {
-        }
-    
-        &__wrapper {
-        }
     }
     
 }
 @media (max-width: 992px) {
     .container {
-        max-width: 720px;
+        max-width: 695px;
+    }
+
+    .diploms {
+        padding-top: 90px;
+    
+        &__slider {
+            width: 698px;
+            margin-top: 15px;
+        }
+    
+        &__img {
+            margin: 0 auto;
+            width: auto;
+            height: 496px;
+            object-fit: cover;
+        }
+    
+        &__wrapper {
+            position: relative;
+        }
+
+        .slick-arrow {
+            border: none;
+        }
+        
+        .arrow_prev, .arrow_next {
+            @include arrows;
+            right: 39px;
+            bottom: -32px;
+        }
+        
+        .arrow_prev {
+            right: 119px;
+        }
     }
 }
-@media (max-width: 768px) {                     
+@media (max-width: 767px) {                     
                                                      
     .container {
         max-width: 540px;

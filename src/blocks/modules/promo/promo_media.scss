@@ -2,6 +2,7 @@
     .container {
         max-width: 1200px;
     }
+
     body.modal-open {
         padding-right:0;  
     }
@@ -9,6 +10,7 @@
         &__photo {
             width: 540px;
         }
+
         &__way {
             top: 845px;
         }
@@ -24,6 +26,7 @@
             width: 540px;
             z-index: -1;
         }
+
         &__app {
             top: 430px;
             left: 57%;
@@ -32,10 +35,72 @@
 }
 @media (max-width: 992px) {
     .container {
-        max-width: 720px;
+        max-width: 695px;
+    }
+
+    .promo {
+        &__wrapper-l-visible {
+            position: relative;;
+        }
+
+        &__title {
+            margin-top: 80px;
+            font-size: 42px;
+        }
+
+        &__subtitle {
+            font-size: 26px;
+        }
+
+        &__descr {
+            font-size: 15px;
+            
+        }
+        &__photo {
+        
+            &_m-hidden {
+                display: none;
+            }
+        }
+
+        &__diploma {
+            margin-top: 30px;
+            width: 498px;
+        }
+
+        &__app {
+            top: 215px;
+            left: auto;
+            right: 0;
+            width: 236px;
+            height: 389px;
+            transform: none;
+        }
+
+        &__item {
+            display: flex;
+            position: relative;
+            margin: 169px auto 0 auto;
+            width: 475px;
+        }
+    
+        &__img {
+            max-width: 180px;
+        }
+    
+        &__poem {
+            padding: 10px 0 18px 19px;
+            margin-top: 0;
+            font-size: 16px;
+            line-height: 160%;
+        }
+
+        &__way {
+            display: none;
+        }
     }
 }
-@media (max-width: 768px) {                     
+@media (max-width: 767px) {                     
                                                      
     .container {
         max-width: 540px;

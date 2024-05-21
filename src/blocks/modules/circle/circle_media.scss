@@ -29,11 +29,15 @@
 
 @media (max-width: 992px) {
     .container {
-        max-width: 720px;
+        max-width: 695px;
     }
     .circle {
         &_direction {
-            top: -135px;
+            top: auto;
+            right: 57px;
+            bottom: -177px;
+            width: 175px;
+            height: 175px;
     
             &:hover {
                 box-shadow: none; 
@@ -47,12 +51,28 @@
                 background-color: $main-color;
             }
         }
-    }
 
-    
+        &_promo {
+            top: 171px;
+            left: 85px;
+        }
+
+        &_diploms {
+            top: 3px;
+            right: 15px;
+            width: 189px;
+            height: 177px;
+
+            &::before {
+                left: 16px;
+                width: 182px;
+                height: 176px;
+            }
+        }
+    }
 }
 
-@media (max-width: 768px) {                     
+@media (max-width: 767px) {                     
                                                      
     .container {
         max-width: 540px;

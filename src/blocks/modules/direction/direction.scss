@@ -9,9 +9,9 @@
     }
 
     &__wrapper {
-        padding-left: 92px;
-        padding-top: 64px;
+        padding: 64px 0 0 92px;
         display: grid;
+        align-content: first baseline;
         grid-template-columns: 60px 840px;
         grid-template-rows: repeat(4, minmax(210px, auto));
         grid-auto-rows: auto;

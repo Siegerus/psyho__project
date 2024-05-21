@@ -1,20 +1,25 @@
 
 <section class="promo">
-    <div class="container container_1440"></div>
     <div class="container">
-        <!-- <div class="promo__wrapper"> -->
+        <div class="promo__wrapper-l-visible">
             <h1 class="promo__title">Дарья Воздраганова</h1>
             <h2 class="promo__subtitle">психолог-консультант</h2>
             <div class="promo__descr">
                 провожу психологические сессии и консультации,<br>
                 работаю в аналитическом направлении
             </div>
-            <div class="promo__photo">
+            <div class="promo__photo promo__photo_m-hidden">
                 <img data-lightbox="image-1" src="img/main_photo.jpg" alt="main_photo">
             </div>
             <div class="promo__diploma">
-                <img src="img/diploma.png" alt="diploma">
+                <picture>
+                    <source media="(max-width: 992px)" srcset="img/diploma-l.jpg">
+                    <source media="(min-width: 993px)" srcset="img/diploma.jpg">
+                    <img src="img/diploma.png" alt="diploma">
+                </picture>
+                    
             </div>
+            
             <div class="promo__app"><img src="img/app-to-diploma.png" alt="app"></div>
             <div class="promo__item">
                 <img class="promo__img" src="img/image.png" alt="universe">
@@ -35,6 +40,6 @@
                 Психология |
                 мой путь
             </div>
-    <!-- </div>  -->
+    </div> 
 </div>
 </section>

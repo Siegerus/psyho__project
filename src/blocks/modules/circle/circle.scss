@@ -20,7 +20,6 @@
     &_promo {
         position: absolute;
         top: 103px;
-        right: 0;
         left: 148px;
 
         &::before {
@@ -39,7 +38,7 @@
         line-height: 110%;
         color: #fff;
         text-transform: uppercase;
-        cursor: pointer;
+        cursor: pointer;     
 
         &:hover {
             box-shadow: 3px 3px 20px $main-color; 

@@ -12,11 +12,27 @@
 
 @media (max-width: 992px) {
     .container {
-        max-width: 720px;
+        max-width: 695px;
+    }
+    .promo__photo_m-visible {
+        display: block;
+        top: 0;
+        right: 0;
+        width: 440px;
+    }
+    
+    .header {
+        /* &__menu {
+            margin-left: 60px;
+        }
+
+        &__hamburger {
+            margin-right: 60px;
+        } */
     }
 }
 
-@media (max-width: 768px) {                     
+@media (max-width: 767px) {                     
                                                      
     .container {
         max-width: 540px;
