@@ -18,12 +18,12 @@
         max-width: 695px;
     }
     .whom {
-        padding-top: 100px;
+        padding-top: 135px;
 
         &__subtitle {
             margin-top: 15px;
             font-size: 21px;
-            margin-left: 10px;
+            margin-left: 4px;
             line-height: 160%;
         }
     
@@ -39,6 +39,20 @@
                                                      
     .container {
         max-width: 540px;
+    }
+
+    .whom {
+        padding-top: 240px;
+
+        &__subtitle {
+            margin-top: 10px;
+            font-size: 19px;
+        }
+    
+        &__list {
+            padding: 25px 0 0 49px;
+            font-size: 18px;
+        }
     }
 }
 @media (max-width: 576px) {

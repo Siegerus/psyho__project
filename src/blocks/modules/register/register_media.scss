@@ -8,6 +8,7 @@
     .container {
         max-width: 968px;
     }
+
     .register {
         &__wrapper {
             justify-content: space-around;
@@ -19,6 +20,29 @@
 @media (max-width: 992px) {
     .container {
         max-width: 695px;
+    }
+
+    .register {
+        margin-top: 118px;
+        &__wrapper {
+            justify-content: flex-start;
+            padding-left: 18px;
+            align-items: flex-end;
+
+        }
+    
+        &__title {
+            margin-left: 38px;
+            margin-bottom: 5px;
+            font-size: 50px;
+            line-height: 110%;
+        }
+
+        &__subtitle {
+            display: block;
+            font-size: 59px;
+            line-height: 100%;
+        }
     }
 }
 @media (max-width: 767px) {                     

@@ -1,14 +1,18 @@
 @media (max-width: 1439px) {
+
     .container {
         max-width: 1200px;
     }
 
 }
 @media (max-width: 1200px) {
+
     .container {
         max-width: 968px;
     }
+
     .reviews {
+
         &__subtitle {
             font-size: 24px;
     
@@ -20,33 +24,70 @@
         &__item {
             margin-bottom: 90px;
         }
+
         &__content {
             padding-right: 97px;
             margin-top: 50px;
             display: none;
             flex-direction: column;
-            align-items: flex-start;
+            align-items: center;
     
             &_active {
                 display: flex;
             }
         }
-
-    }
-    
+    } 
 }
+
 @media (max-width: 992px) {
+
     .container {
         max-width: 695px;
     }
+
     .reviews {
+        padding-top: 67px;
+
+        &__subtitle {
+            margin-top: 20px;
+            font-size: 24px;
+    
+            span {
+                font-size: 26px;
+            }
+        }
+
+        &__content {
+            align-items: flex-start;
+            margin-top: 60px;
+            padding-right: 0;
+        }
+
+        &__item {
+            margin-bottom: 98px;
+        }
 
         &__button {
+            margin-top: 35px;
+
             &:hover {
                 box-shadow: none;
                 background-color: #ffff;
             }
         }
+
+        &__arrow-prev, &__arrow-next {
+        @include arrows;
+
+        right: 65px;
+        bottom: -40px;
+        width: 87px;
+        height: 96px;
+    }
+
+    &__arrow-prev {
+        right: 155px;
+    }
     }
     
 }
@@ -57,6 +98,7 @@
     }
 }
 @media (max-width: 576px) {
+    
     .container {
         max-width: 100%;
         padding: 0 10px;

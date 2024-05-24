@@ -22,9 +22,7 @@
         &_diploms {
             right: 23px;
         }
-
     }
-
 }
 
 @media (max-width: 992px) {
@@ -34,18 +32,18 @@
     .circle {
         &_direction {
             top: auto;
-            right: 57px;
+            right: 52px;
             bottom: -177px;
             width: 175px;
             height: 175px;
-    
-            &:hover {
-                box-shadow: none; 
-                background-color: $main-color;
-            }
-        }
-        &_register {
 
+            &::before {
+                left: 13px;
+                bottom: 12px;
+                width: 170px;
+                height: 175px;
+            }
+    
             &:hover {
                 box-shadow: none; 
                 background-color: $main-color;
@@ -69,6 +67,34 @@
                 height: 176px;
             }
         }
+
+        &_register {
+            width: 160px;
+            height: 160px;
+            font-size: 14px;
+
+            &::before {
+                left: -20px;
+                bottom: 0;
+                width: 180px;
+                height: 180px;
+            }
+
+            &:hover {
+                box-shadow: none; 
+                background-color: $main-color;
+            }
+        }
+
+        &_footer {
+            width: 100px;
+            height: 100px;
+
+            img {
+                max-width: 50px;
+                max-height: 50px;
+            }
+        }
     }
 }
 
@@ -76,6 +102,36 @@
                                                      
     .container {
         max-width: 540px;
+    }
+    .circle {
+        &_promo {
+            top: 171px;
+            left: 20px;
+        }
+
+        &_direction {
+            right: 90px;
+            &::before {
+                left: 17px;
+                bottom: 0px;
+                width: 175px;
+                height: 175px;
+            }
+        }
+
+        &_diploms {
+            top: 3px;
+            right: 15px;
+            width: 119px;
+            height: 107px;
+            background: url("../img/circle-photo.png") center (center/cover) no-repeat;
+
+            &::before {
+                left: 12px;
+                width: 112px;
+                height: 106px;
+            }
+        }
     }
 }
 

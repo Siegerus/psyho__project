@@ -105,6 +105,64 @@
     .container {
         max-width: 540px;
     }
+
+    .promo {
+
+        &__title {
+            margin-top: 80px;
+            font-size: 42px;
+        }
+
+        &__subtitle {
+            font-size: 26px;
+        }
+
+        &__descr { 
+            max-width: 405px;
+            font-size: 21px;
+            line-height: 98%;
+            
+            &-wrap {
+                max-width: 426px;
+                background-color: rgba(238 237 238 / 50%);
+            }
+
+            br {
+                display: none;
+            }
+        
+        }
+        &__photo { 
+            width: 400px; 
+        }
+
+        &__diploma {
+            width: 430px;
+        }
+
+        &__app {
+            top: 213px;
+            width: 186px;
+            height: auto;
+        }
+
+        &__item {
+            display: flex;
+            position: relative;
+            margin: 100px auto 0 auto;
+            width: 100%;
+        }
+    
+        &__poem {
+            padding: 0 0 0 14px;
+            margin-top: 0;
+            font-size: 18px;
+            
+        }
+
+    }
+
+    
 }
 @media (max-width: 576px) {
     .container {
