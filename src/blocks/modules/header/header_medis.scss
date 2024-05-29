@@ -20,16 +20,6 @@
         right: 0;
         width: 440px;
     }
-    
-    .header {
-        /* &__menu {
-            margin-left: 60px;
-        }
-
-        &__hamburger {
-            margin-right: 60px;
-        } */
-    }
 }
 
 @media (max-width: 767px) {                     
@@ -42,6 +32,14 @@
 @media (max-width: 576px) {
     .container {
         max-width: 100%;
-        padding: 0 10px;
+        padding: 0 15px;
+    }
+
+    .header {
+        padding-top: 15px;
+        &__menu {
+            margin-top: 5px;
+            font-size: 16px;
+        }
     }
 }

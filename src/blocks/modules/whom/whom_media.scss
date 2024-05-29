@@ -58,6 +58,20 @@
 @media (max-width: 576px) {
     .container {
         max-width: 100%;
-        padding: 0 10px;
+        padding: 0 15px;
+    }
+
+    .whom {
+        padding-top: 171px;
+
+        &__subtitle {
+            width: 255px;
+            font-size: 14px;
+        }
+
+        &__list {
+            padding: 32px 0 0 23px;
+            font-size: 14px;
+        }
     }
 }

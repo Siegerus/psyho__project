@@ -1,21 +1,9 @@
 @media (max-width: 1439px) {
 
-    .container {
-        max-width: 1200px;
-    }
 }
 @media (max-width: 1200px) {
-
-    .container {
-        max-width: 968px;
-    }
-    
 }
 @media (max-width: 992px) {
-
-    .container {
-        max-width: 695px;
-    }
 
     .aside {
         &__menu {
@@ -24,10 +12,6 @@
     }
 }
 @media (max-width: 767px) {                     
-                                                     
-    .container {
-        max-width: 540px;
-    }
 
     .aside {
         &__menu {
@@ -36,10 +20,6 @@
     }
 }
 @media (max-width: 576px) {
-    .container {
-        max-width: 100%;
-        padding: 0 10px;
-    }
 
     .aside {
         &__menu {

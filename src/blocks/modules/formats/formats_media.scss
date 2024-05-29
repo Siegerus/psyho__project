@@ -51,15 +51,6 @@
             display: none;
         }
     
-        &__icon {
-            /* &_l-visible {
-                display: block;
-                margin-right: 10px;
-            }
-            &_l-hidden {
-                display: none;
-            } */
-        }
         &__header {
             display: flex;
             justify-content: flex-start;
@@ -179,7 +170,6 @@
         }
 
         &__header {
-            /* padding-top: 5px; */
             display: flex;
             justify-content: flex-start;
             font-size: 31px;
@@ -257,10 +247,83 @@
     .container {
         max-width: 540px;
     }
+
+    .formats {
+        padding-top: 95px;
+        &__wrapper {
+            justify-content: center;
+            grid-template-columns: 540px;
+            margin-top: 40px;
+            column-gap: 10px;
+            row-gap: 40px;
+        }
+
+        &__icon {
+
+            &_m-visible {
+                display: block;
+                margin-right: 10px;
+            }
+            &_m-hidden {
+                display: none;
+            }
+        }
+
+        &__header {
+            align-items: center;
+            font-size: 30px;
+            white-space: unset;
+
+            span {
+                margin-left: 0;
+                font-size: 32px;
+            }
+        }
+
+        &__icon_m-visible {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 60px;
+        }
+
+        &__item {
+            justify-self: center;
+        }
+        
+        &__body {
+            margin-top: 15px;
+            width: 100%;
+
+            br {
+                display: none;
+            }
+        }
+
+        &__col-wrapper {
+            margin-top: 10px;
+            width: 100%;
+        }
+
+        &__sign {
+            font-size: 19px;
+        }
+
+        &__overlay {
+            top: 1135px;
+        }
+
+        &__time-min {
+
+            span{
+                font-size: 20px;
+            }
+        }
+    }
 }
 @media (max-width: 576px) {
     .container {
         max-width: 100%;
-        padding: 0 10px;
+        padding: 0 15px;
     }
 }

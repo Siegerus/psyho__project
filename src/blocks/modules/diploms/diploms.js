@@ -5,8 +5,10 @@ $(document).ready(function(){
         infinite: true,
         slidesToShow: 1,
         slidesToScroll: 1,
+        arrows: true,
         prevArrow: '<button type="button" class="slick-prev"><div class="arrow_prev"><img src="img/icons/arrow_prev.svg" alt="arrow_prev"></div></button>' ,
-        nextArrow: '<button type="button" class="slick-prev"><div class="arrow_next"><img src="img/icons/arrow_next.svg" alt="arrow_prev"></div></button>'
+        nextArrow: '<button type="button" class="slick-next"><div class="arrow_next"><img src="img/icons/arrow_next.svg" alt="arrow_prev"></div></button>'
+        
     });
 
 

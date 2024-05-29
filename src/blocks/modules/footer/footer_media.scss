@@ -88,11 +88,12 @@
 
         &__copyright {
             order: 2;
-            margin-top: 30px;
+            margin-top: 19px;
             font-size: 16px;
         }
 
         &__social {
+            align-items: center;
             display: flex;
             order: 1;
         
@@ -149,10 +150,49 @@
     .container {
         max-width: 540px;
     }
+    
+    .footer {
+        padding-top: 20px;
+
+        &__wrapper {
+            margin-top: 30px;
+        }
+
+        &__label {
+            h3 {
+                text-align: left;
+            }
+        }
+
+        &__title {
+            font-size: 46px;
+        }
+
+        &__subtitle {
+            margin-top: 7px;
+            font-size: 24px;
+        }
+
+        &__header {
+            font-size: 30px;
+        }
+
+        &__list {
+            margin-top: 20px;
+        }
+
+        &__nav {
+            margin-top: 60px;
+        }  
+        
+        &__social {
+            align-items: center;
+        }
+    }
 }
 @media (max-width: 576px) {
     .container {
         max-width: 100%;
-        padding: 0 10px;
+        padding: 0 15px;
     }
 }

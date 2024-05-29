@@ -132,12 +132,75 @@
                 height: 106px;
             }
         }
+
+        &_register {
+            margin-right: auto;
+            width: 160px;
+            height: 160px;
+            font-size: 14px;
+
+            &::before {
+                left: -12px;
+                bottom: 13px;
+                width: 160px;
+                height: 160px;
+            }
+        }
     }
 }
 
 @media (max-width: 576px) {
     .container {
         max-width: 100%;
-        padding: 0 10px;
+        padding: 0 15px;
+    }
+
+    .circle {
+        &_promo {
+            top: 87px;
+            left: 13px;
+            width: 74px;
+            height: 74px;
+
+            img {
+                width: 21px;
+                height: 25px;
+            }
+        
+            &::before {
+                left: 5px;
+                width: 86px;
+                height: 86px;
+            }
+
+        }
+        &_direction {
+            bottom: -96px;
+            right: 55px;
+            width: 150px;
+            height: 150px;
+            font-size: 13px;
+            
+            &::before {
+                left: 17px;
+                bottom: 0px;
+                width: 150px;
+                height: 150px;
+            }
+        }
+
+        &_diploms {
+            top: 0;
+            right: 7px;
+            width: 87px;
+            height: 82px;
+            background: url("../img/circle-photo-s.png") center (center/cover) no-repeat;
+
+            &::before {
+                left: 7px;
+                width: 83px;
+                height: 83px;
+            }
+        }
     }
 }
