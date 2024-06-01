@@ -6,22 +6,10 @@
         position: relative;
         grid-template-columns: 60px 482px 555px;
         grid-template-rows: 247px 333px 340px 320px;
-        /* grid-auto-rows: auto; */
+        grid-auto-rows: auto;
         column-gap: 35px;
         row-gap: 50px;
-        margin-top: 96px;
-
-        &:nth-child(2) {
-            
-        }
-
-        &:nth-child(4) {
-            
-        }
-
-        &:nth-child(5) {
-            
-        }   
+        margin-top: 96px;  
     }
  
     &__col-wrapper {
@@ -110,6 +98,10 @@
         text-decoration: underline;
         text-underline-offset: 3px;
         cursor: pointer;
+
+        &_s-visible {
+            display: none;
+        }
 
         &:hover {
             box-shadow: 1px 1px 20px $main-color; 

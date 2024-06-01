@@ -154,6 +154,13 @@
         max-width: 100%;
         padding: 0 15px;
     }
+}
+
+@media (max-width: 420px) {
+    .container {
+        max-width: 100%;
+        padding: 0 15px;
+    }
 
     .circle {
         &_promo {
@@ -200,6 +207,27 @@
                 left: 7px;
                 width: 83px;
                 height: 83px;
+            }
+        }
+
+        &_register {
+            width: 150px;
+            height: 150px;
+
+            &::before {
+                right: 7px;
+                width: 150px;
+                height: 150px;
+            }
+        }
+
+        &_footer {
+            width: 65px;
+            height: 65px;
+
+            img {
+                width: 30px;
+                height: 30px;
             }
         }
     }

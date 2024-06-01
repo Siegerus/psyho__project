@@ -91,7 +91,7 @@
         }
     
         &__img {
-            max-width: 180px;
+            min-width: 180px;
         }
     
         &__poem {
@@ -167,14 +167,21 @@
         }
     }   
 }
+
 @media (max-width: 576px) {
+    .container {
+        max-width: 100%;
+        padding: 0 15px;
+    }
+}
+
+@media (max-width: 420px) {
     .container {
         max-width: 100%;
         padding: 0 15px;
     }
 
     .promo {
-
         &__photo {
             width: 258px;
         }

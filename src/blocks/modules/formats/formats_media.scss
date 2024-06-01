@@ -105,8 +105,9 @@
         }
 
         &__overlay {
-            top: 920px;
-            width: 100%;
+            top: 857px;
+            right: -5px;
+            width: calc(100% + 10px);
             height: 435px;
 
             &_bt {
@@ -167,6 +168,10 @@
             text-align: unset;
             font-size: 16px;
             line-height: 1.6;
+
+            br {
+                display: none;
+            }
         }
 
         &__header {
@@ -250,6 +255,7 @@
 
     .formats {
         padding-top: 95px;
+
         &__wrapper {
             justify-content: center;
             grid-template-columns: 540px;
@@ -261,11 +267,18 @@
         &__icon {
 
             &_m-visible {
-                display: block;
+                display: flex;
+                align-items: center;
+                justify-content: center;
                 margin-right: 10px;
+                height: 60px;
             }
             &_m-hidden {
                 display: none;
+            }
+
+            &_fs {
+                justify-content: flex-start;
             }
         }
 
@@ -278,13 +291,6 @@
                 margin-left: 0;
                 font-size: 32px;
             }
-        }
-
-        &__icon_m-visible {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 60px;
         }
 
         &__item {
@@ -321,9 +327,106 @@
         }
     }
 }
+
 @media (max-width: 576px) {
     .container {
         max-width: 100%;
         padding: 0 15px;
+    }
+}
+
+@media (max-width: 420px) {
+    .container {
+        max-width: 100%;
+        padding: 0 15px;
+    }
+
+    .formats {
+        padding-top: 57px;
+
+        &__wrapper {
+            grid-template-columns: 100%;
+            grid-template-rows: auto;
+        }
+
+        &__header {
+            width: 225px;
+            font-size: 20px;
+
+            span {
+                font-size: 20px;
+            } 
+        }
+
+        &__body {
+            width: 100%;
+            font-size: 13px;
+        }
+
+        &__item {
+            width: 100%;
+        }
+
+        &__icon {
+            margin-right: 0;
+            height: auto;
+        }
+
+        &__col-wrapper {
+            width: 100%;
+        }
+
+        &__sign {
+            align-self: flex-start;
+            font-size: 14px;
+
+            &_s-visible {
+                display: block;
+            }
+
+            &_s-hidden {
+                display: none;
+            }
+
+            &::before {
+                top: -2px;
+                right: -17px;
+                width: 16px;
+                height: 20px;
+            }
+        }
+
+        &__price-descr {
+            font-size: 14px;
+            text-align: right;
+        }
+
+        &__price-cost {
+            margin-top: 4px;
+            text-align: right;
+            font-size: 26px;
+        }
+
+        &__time-descr {
+            font-size: 14px;
+        }
+
+        &__time-min {
+            margin-top: 4px;
+            font-size: 26px;
+
+            span{
+                font-size: 20px;
+            }
+        }
+
+        &__overlay {
+            top: 985px;
+        }
+
+        &__unavailable {
+            font-size: 25px;
+            width: 250px;
+        }
     }
 }

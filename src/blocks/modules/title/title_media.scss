@@ -2,41 +2,50 @@
     .container {
         max-width: 1200px;
     }
-
 }
+
 @media (max-width: 1200px) {
     .container {
         max-width: 968px;
     }
+
     .title {
         font-size: 56px;
-        line-height: 1.1; 
+        line-height: 1.1;
     }
-    
 }
-@media (max-width: 992px) {
 
+@media (max-width: 992px) {
     .container {
         max-width: 695px;
     }
 
     .title {
         font-size: 45px;
-        line-height: 110%; 
+        line-height: 110%;
     }
 }
-@media (max-width: 767px) {                     
-                                                     
+
+@media (max-width: 767px) {
+
     .container {
         max-width: 540px;
     }
 
     .title {
         font-size: 42px;
-        line-height: 110%; 
+        line-height: 110%;
     }
 }
+
 @media (max-width: 576px) {
+    .container {
+        max-width: 100%;
+        padding: 0 15px;
+    }
+}
+
+@media (max-width: 420px) {
     .container {
         max-width: 100%;
         padding: 0 15px;

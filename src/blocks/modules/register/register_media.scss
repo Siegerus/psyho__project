@@ -66,9 +66,35 @@
         }
     }
 }
+
 @media (max-width: 576px) {
     .container {
         max-width: 100%;
         padding: 0 15px;
     }
 }
+
+@media (max-width: 420px) {
+    .container {
+        max-width: 100%;
+        padding: 0 15px;
+    }
+
+    .register {
+        margin-top: 0;
+
+        &__wrapper {
+            padding-left: 18px;
+        }
+
+        &__title {
+            margin-top: 15px;
+            margin-bottom: 0;
+
+            span {
+                margin-left: 11px;
+            }
+        }
+    }
+}
+
