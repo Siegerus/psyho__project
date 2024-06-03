@@ -13,14 +13,17 @@
 
 @media (max-width: 992px) {
     .container {
-        max-width: 720px;
+        max-width: 695px;
     }
     .button {
-        background-color: $main-color;
+
+        &:hover {
+            background-color: $main-color;
+        }
     }
 }
 
-@media (max-width: 768px) {                     
+@media (max-width: 767px) {                     
                                                      
     .container {
         max-width: 540px;
@@ -28,15 +31,38 @@
 }
 
 @media (max-width: 576px) {
-    .container {
-        max-width: 100%;
-        padding: 0 15px;
+
+    .button {
+        padding: 30px 35px;
+        font-size: 21px;
+
+        &_mt75 {
+            margin-top: 50px;
+        }
     }
+
 }
 
-@media (max-width: 420px) {
+@media (max-width: 425px) {
     .container {
         max-width: 100%;
         padding: 0 15px;
     }
+    
+    .button {
+        padding: 25px 20px;
+        font-size: 18px;
+
+        &_mt75 {
+            margin-top: 45px;
+        }
+    }
+
+}
+
+@media (width < 375px) {
+    .button {
+        padding: 25px 17px;
+    }
+
 }

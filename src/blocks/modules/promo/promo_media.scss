@@ -29,7 +29,7 @@
     }    
     .promo {
         &__photo {
-            width: 540px;
+            width: 539px;
             z-index: -1;
         }
 
@@ -169,13 +169,6 @@
 }
 
 @media (max-width: 576px) {
-    .container {
-        max-width: 100%;
-        padding: 0 15px;
-    }
-}
-
-@media (max-width: 420px) {
     .container {
         max-width: 100%;
         padding: 0 15px;

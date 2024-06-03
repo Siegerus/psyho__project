@@ -1,0 +1,246 @@
+@media (max-width: 1439px) {
+    .container {
+        max-width: 1200px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .container {
+        max-width: 968px;
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 695px;
+    }
+}
+
+@media (max-width: 767px) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+
+@media (max-width: 600px) {
+    .feed-form {
+        
+        &__item {
+
+            &-img {
+                max-width: 130px;
+            }
+        }
+    }
+}
+
+@media (max-width: 576px) {
+
+    .feed-form {
+
+        &__label {
+            margin-top: 28px;
+            font-size: 22px;
+            line-height: 120%;
+        }
+
+        &__input {
+            margin-top: 20px;
+            padding-left: 12px;
+            font-size: 19px;
+        }
+
+        &__radio-wrapper {
+            flex-direction: column; 
+        }
+
+        &__radio-block {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        &__radio-label {
+            margin-top: 10px;
+
+            &_denied {
+                margin-top: 0;
+                margin-left: 12px;
+            }
+        }
+
+        &__item {
+
+            &-img {
+                max-width: 130px;
+            }
+            &-body {
+                padding: 9px 5px 3px 11px;
+                max-width: 270px;
+            }
+
+            &-date {
+                max-width: 270px;
+            }
+
+            &-descr {
+                display: block;
+                max-width: 270px;
+            }
+
+            &-title {
+                font-size: 19px;
+            }
+
+            &-date ,&-duration, &-players {
+                font-size: 16px;
+
+                span {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+    input#sign-nickname, input#theme-nickname, input#reviews-nickname {
+        &::placeholder {
+            font-size: 17px;
+        }
+    }
+
+    #datepicker {
+        font-size: 20px;
+    }
+
+    input#sign-date {
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    input#instruction-social {
+        padding-top: 20px;
+        font-size: 16px;
+        padding-left: 10px;
+
+        &::placeholder {
+            font-size: 16px;
+        }
+    }
+}
+
+@media (max-width: 425px) {
+    .feed-form {
+
+        &__label {
+            margin-top: 25px;
+            font-size: 20px;
+            line-height: 120%;
+        }
+
+        &__input {
+            margin-top: 14px;
+            padding-left: 11px;
+            height: 55px;
+            font-size: 16px;
+        }
+
+        &__radio-wrapper {
+            flex-direction: column; 
+        }
+
+        &__radio-block {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        &__radio-label {
+            margin-top: 10px;
+
+            &_denied {
+                margin-top: 0;
+                margin-left: 12px;
+            }
+        }
+
+        &__item {
+
+            &-img {
+                max-width: 152px;
+            }
+
+            &-body {
+                padding: 9px 5px 3px 9px;
+                max-width: unset;
+            }
+
+            &-date {
+                max-width: 170px;
+            }
+
+            &-descr {
+                display: block;
+                max-width: 170px;
+            }
+
+            &-title {
+                font-size: 19px;
+                max-width: 170px;
+            }
+
+            &-date ,&-duration, &-players {
+                font-size: 16px;
+
+                span {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+    input#sign-nickname, input#theme-nickname, input#reviews-nickname {
+        &::placeholder {
+            font-size: 14px;
+        }
+    }
+
+    #datepicker {
+        font-size: 15px;
+    }
+
+    input#sign-date {
+        width: 100%;
+    }
+
+    input#instruction-social {
+        padding-top: 20px;
+        font-size: 16px;
+
+        &::placeholder {
+            font-size: 13px;
+        }
+    }
+}
+
+@media (width < 375px) {
+    .feed-form {
+
+        &__item {
+
+            &-descr {
+                display: flex;
+                flex-direction: column;
+                max-width: 160px;
+            }
+
+            &-title {
+                font-size: 20px;
+            }
+
+            &-date ,&-duration, &-players {
+                font-size: 16px;
+
+                span {
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+}

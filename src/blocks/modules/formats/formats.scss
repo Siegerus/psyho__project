@@ -5,7 +5,7 @@
         display: grid;
         position: relative;
         grid-template-columns: 60px 482px 555px;
-        grid-template-rows: 247px 333px 340px 320px;
+        grid-template-rows: minmax(247px, auto) minmax(333px, auto) minmax(340px, auto) minmax(320px, auto);
         grid-auto-rows: auto;
         column-gap: 35px;
         row-gap: 50px;
@@ -23,15 +23,16 @@
     }
 
     &__overlay {
+        grid-row: 3 / 4;
         display: flex;
         z-index: 10;
         align-items: center;
         justify-content: center;
         position: absolute;
-        top: 665px;
+        top: -10px;
         right: 0;
         width: calc(100% + 53px);
-        height: 322px;
+        height: calc(100% + 20px);
         background-color: rgba(238 237 238 / 60%);
         border: 1px solid $main-color;
 

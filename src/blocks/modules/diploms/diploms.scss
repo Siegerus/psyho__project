@@ -21,6 +21,10 @@
 
 //slick
 
+.slick-slider {
+touch-action: auto;
+}
+
 .slick-arrow {
     border: none;
 }

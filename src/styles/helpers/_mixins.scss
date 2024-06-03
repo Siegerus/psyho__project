@@ -17,9 +17,9 @@
     &::before, &::after {
         content: "";
         position: absolute;
-        left: 15px;
+        left: 16px;
         width: 2px;
-        height: 33px;
+        height: 36px;
         background-color: $main-color;
     }
 

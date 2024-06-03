@@ -46,7 +46,6 @@
             &:focus {
                 outline: 2px solid rgba(16 16 16 / 45%);
             }
-
         }
     }
 
@@ -57,7 +56,7 @@
 
     &__radio-label {
         margin-right: 20px;
-        margin-left: 7px;
+        margin-left: 4px;
         font-size: 18px;
         line-height: 90%;
         letter-spacing: -0.02em;
@@ -227,7 +226,7 @@ input.instructions-radio:checked + .feed-form__radio-block, input.theme-radio:ch
 
 label.error {
     margin-top: 12px;
-    color: $main-color;
+    color: #1a43c9;
     font-size: 17px;
     line-height: 90%;
     letter-spacing: -0.02em;
@@ -274,4 +273,3 @@ td[data-handler] {
 table th span {
     color: rgba(16 16 16 / 60%);
 }
-

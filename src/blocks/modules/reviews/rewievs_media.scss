@@ -180,16 +180,9 @@
         max-width: 100%;
         padding: 0 15px;
     }
-}
-
-@media (max-width: 420px) {
-    .container {
-        max-width: 100%;
-        padding: 0 15px;
-    }
 
     .reviews {
-        padding-top: 290px;
+        padding-top: 80px;
 
         &__title {
             span {
@@ -289,7 +282,7 @@
             }
     
             &__arrow-prev {
-                right: 50px;
+                right: 51px;
             }
 
         

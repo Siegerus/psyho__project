@@ -37,7 +37,7 @@ $(document).ready(function(){
             duration: 300
         },
         disableOn: function() {
-            if( $(window).width() < 1200 ) {
+            if( $(window).width() < 320) {
               return false;
             }
             return true;

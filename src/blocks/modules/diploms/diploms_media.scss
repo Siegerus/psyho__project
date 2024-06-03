@@ -100,30 +100,13 @@
     }
 
     .diploms {
-        &__title { 
-
-            span {
-                padding-left: 5px;
-                border-left: 2px solid $main-color;
-            }
-        }
-    }
-}
-
-@media (max-width: 420px) {
-    .container {
-        max-width: 100%;
-        padding: 0 15px;
-    }
-
-    .diploms {
         padding-top: 78px;
 
-        &__title {
-            width: 180px;   
+        &__title { 
             span {
-                padding-left: 5px;
-                border-left: 2px solid $main-color;
+                margin-left: 6px;
+                padding-left: 7px;
+                border-left: 3px solid $main-color;
             }
         }
 
@@ -151,6 +134,33 @@
 
         .arrow_prev {
             right: 61px;
+        }
+    }
+}
+
+@media (width > 480px) and (width < 577px)  {
+    .diploms {
+        &__img {
+            width: auto;
+            height: 325px;
+        }  
+    }
+}
+
+@media (width > 397px) and (width < 481px)  {
+    .diploms {
+        &__img {
+            width: auto;
+            height: 270px;
+        }  
+    }
+}
+
+@media (max-width: 400px) {
+    .diploms {
+
+        &__title {
+            width: 180px;   
         }
     }
 }

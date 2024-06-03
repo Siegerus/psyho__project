@@ -20,7 +20,7 @@
     .container {
         max-width: 695px;
     }
-    .header {
+    .modal {
         &__close {
 
             &:hover {
@@ -38,20 +38,74 @@
     }
 }
 
+@media (max-width: 600px) {                                                                       
+    .container {
+        max-width: 540px;
+    }
+
+    .modal {
+        max-width: 540px;
+
+        &__wrapper {
+            max-width: 540px; 
+        }
+    }
+
+}
+
+@media (width > 500px) and (width < 577px) {
+    .modal {
+        max-width: 480px;
+
+        &__wrapper {
+            max-width: 480px; 
+        }
+    }
+}
+
 @media (max-width: 576px) {
     .container {
         max-width: 100%;
         padding: 0 15px;
     }
+
+    .modal {
+        padding: 105px 33px 30px 33px;
+        width: 100%;
+
+        &__wrapper {
+            width: 100%;
+        }
+
+        &__title {
+            margin-top: 0;
+            font-size: 36px;
+        }
+
+        &__links {
+            margin-top: 15px;
+            font-size: 19px;
+        }  
+    }
 }
 
-@media (max-width: 420px) {
-    .container {
-        max-width: 100%;
-        padding: 0 15px;
-    }
+@media (max-width: 425px) {
+    .modal {
+        padding: 90px 33px 45px 33px;
+        width: 100%;
 
-    .register {
-        margin-top: 0;
+        &__wrapper {
+            width: 100%;
+        }
+
+        &__title {
+            margin-top: 0;
+            font-size: 34px;
+        }
+
+        &__links {
+            margin-top: 13px;
+            font-size: 18px;
+        }  
     }
 }

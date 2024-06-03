@@ -1,7 +1,7 @@
 import $ from "jquery";
 $(document).ready(function(){
     
-    $('.aside__close').on('click', function (){
+    $('.aside__close' && '.aside__close-circle').on('click', function (){
         $('.aside__menu').toggleClass('aside__menu_active'),
         $('.overlay').fadeOut('slow');
     });

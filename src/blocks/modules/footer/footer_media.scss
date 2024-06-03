@@ -195,13 +195,6 @@
         max-width: 100%;
         padding: 0 15px;
     }
-}
-
-@media (max-width: 420px) {
-    .container {
-        max-width: 100%;
-        padding: 0 15px;
-    }
 
     .footer {
         padding-top: 18px;
@@ -272,6 +265,11 @@
 
         &__copyright {
             font-size: 14px;
+            max-width: 255px;
+
+            &-dash {
+                display: none;
+            }
         }
     }
 }
