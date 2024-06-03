@@ -59,7 +59,26 @@
 }
 
 @media (max-width: 576px) {
+    .container {
+        max-width: 100%;
+        padding: 0 15px;
+    }
 
+    .whom {
+        padding-top: 300px;
+
+        &__subtitle {
+            max-width: 400px;
+            font-size: 18px;
+        }
+
+        &__list {
+            font-size: 16px;
+        }
+    }
+}
+
+@media (max-width: 375px) {
     .container {
         max-width: 100%;
         padding: 0 15px;

@@ -173,6 +173,59 @@
         max-width: 100%;
         padding: 0 15px;
     }
+    .promo {
+
+        &__diploma {
+            width: 310px;
+        }
+
+        &__app {
+            top: 200px;
+            width: 140px;
+        }
+
+        &__title {
+            margin-top: 140px;
+            font-size: 36px;
+        }
+
+        &__subtitle {
+            margin-top: 0;
+            margin-left: 5px;
+            font-size: 22px;
+        }
+
+        &__descr {
+            margin-left: 5px;
+            font-size: 17px;
+
+            &-wrap {
+                max-width: 300px;
+                padding-top: 15px;
+            }
+        }
+
+        &__item {
+            margin-top: 70px;
+        }
+
+        &__poem {
+            font-size: 13px;
+            max-width: 245px;
+            min-width: 225px;
+        }
+        &__img {
+            min-width: 135px;
+            max-height: 135px;
+        }
+    }
+}
+
+@media (max-width: 375px) {
+    .container {
+        max-width: 100%;
+        padding: 0 15px;
+    }
 
     .promo {
         &__photo {
@@ -211,7 +264,7 @@
             &-wrap {
                 margin-top: 5px;
                 padding-top: 5px;
-                height: 70px;
+                min-height: 70px;
             }
         }
 
@@ -227,6 +280,8 @@
 
         &__poem {
             font-size: 10px;
+            max-width: unset;
+            min-width: unset;
         }
  
     }

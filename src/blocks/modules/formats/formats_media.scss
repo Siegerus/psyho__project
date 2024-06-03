@@ -13,7 +13,7 @@
         }
 
         &__overlay {
-            width: calc(100% + 20px);
+            width: 100%;
         }
     }
 }
@@ -205,6 +205,7 @@
                 text-align: right;
             }       
         }
+        
         &__price {
             width: 75px;
                 
@@ -272,6 +273,7 @@
             white-space: unset;
 
             span {
+                display: block;
                 margin-left: 0;
                 font-size: 32px;
             }
@@ -322,6 +324,89 @@
             grid-template-rows: auto;
         }
 
+        &__item {
+            width: 100%;
+        }
+
+        &__header {
+            width: 270px;
+            font-size: 23px;
+
+            span {
+                font-size: 23px;
+            }
+        }
+
+        &__body {
+            margin-top: 10px;
+            padding-left: 10px;
+            padding-right: 10px;
+            font-size: 15px;
+        }
+
+        &__col-wrapper {
+            padding-left: 10px;
+            margin-top: 10px;
+            width: 100%;
+        }
+
+        &__sign {
+            font-size: 15px;
+
+            &::before {
+                top: -3px;
+                right: -17px;
+                width: 14px;
+                height: 25px;
+            }
+        }
+
+        &__time {
+
+            &-min {
+                font-size: 28px;
+
+                span {
+                    font-size: 11px;
+                }
+            }
+    
+            &-descr {
+                font-size: 16px;
+            }       
+        }
+
+        &__price {
+                
+            &-descr {
+               font-size: 16px;
+            }
+
+            &-cost {
+                font-size: 28px;
+            } 
+        }
+
+        &__unavailable {
+            font-size: 25px;
+        }
+    }
+}
+
+@media (max-width: 375px) {
+    .container {
+        max-width: 100%;
+        padding: 0 15px;
+    }
+
+    .formats {
+        padding-top: 57px;
+
+        &__wrapper {
+            grid-template-columns: 100%;
+            grid-template-rows: auto;
+        }
+
         &__header {
             width: 225px;
             font-size: 20px;
@@ -346,6 +431,7 @@
         }
 
         &__col-wrapper {
+            padding-right: 10px;
             width: 100%;
         }
 
@@ -391,10 +477,6 @@
             span{
                 font-size: 20px;
             }
-        }
-
-        &__overlay {
-            right: -10px;
         }
 
         &__unavailable {

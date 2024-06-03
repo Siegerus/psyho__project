@@ -11,6 +11,7 @@
         line-height: 110%;
         text-transform: uppercase;
         cursor: pointer;
+        transition: all 0.3s; 
 
         &:hover {
             color: $main-color;

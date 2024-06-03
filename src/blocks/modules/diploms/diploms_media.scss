@@ -98,18 +98,7 @@
         max-width: 100%;
         padding: 0 15px;
     }
-
     .diploms {
-        padding-top: 78px;
-
-        &__title { 
-            span {
-                margin-left: 6px;
-                padding-left: 7px;
-                border-left: 3px solid $main-color;
-            }
-        }
-
         &__slider {
             margin-top: -5px; 
             width: 100%;
@@ -120,6 +109,25 @@
             width: auto;
             height: 206px;
         }
+
+        &__title { 
+            span {
+                margin-left: 6px;
+                padding-left: 7px;
+                border-left: 3px solid $main-color;
+            }
+        }
+    }
+}
+
+@media (max-width: 375px) {
+    .container {
+        max-width: 100%;
+        padding: 0 15px;
+    }
+
+    .diploms {
+        padding-top: 108px;
 
         .arrow_prev, .arrow_next {
             @include arrows;
@@ -147,7 +155,7 @@
     }
 }
 
-@media (width > 397px) and (width < 481px)  {
+@media (width > 375px) and (width < 481px)  {
     .diploms {
         &__img {
             width: auto;
@@ -158,6 +166,7 @@
 
 @media (max-width: 400px) {
     .diploms {
+        padding-top: 78px;
 
         &__title {
             width: 180px;   

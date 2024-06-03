@@ -65,6 +65,11 @@
             text-decoration: none;
             text-transform: none;
             color: #101010;
+            transition: all 0.3s;
+
+            &:hover {
+                color: $main-color;
+            }
         }
     }
 
@@ -94,6 +99,11 @@
             color: #101010;
             font-size: 14px;
             line-height: 120%;
+            transition: all 0.3s;
+
+            &:hover {
+                color: $main-color;
+            }
 
             &_instagram {
                 text-transform: uppercase;

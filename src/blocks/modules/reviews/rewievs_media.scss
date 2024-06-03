@@ -72,7 +72,7 @@
 
             &:hover {
                 box-shadow: none;
-                background-color: #ffff;
+                background-color: none;
             }
         }
 
@@ -182,14 +182,81 @@
     }
 
     .reviews {
-        padding-top: 80px;
-
         &__title {
             span {
                 padding-left: 5px;
                 border-left: 2px solid $main-color;
             }
         }
+
+        &__subtitle {
+            font-size: 18px;
+            max-width: 400px; 
+
+            span {
+                font-size: 18px;
+            }
+        }
+
+        &__button {
+            margin-top: 20px;
+            font-size: 15px;
+        }
+
+        &__content {
+            margin-top: 40px;
+        }
+
+        &__comment {
+            max-width: 350px;
+            font-size: 15px;
+
+            br {
+                display: none;
+            }
+        }
+
+        &__header {
+            height: 80px;
+        } 
+
+        &__name {
+            font-size: 27px;
+        }
+
+        &__mark {
+            margin-right: 20px;
+            width: 40px;
+        }
+
+        &__person {
+            margin-right: 20px;
+            width: 80px;
+        }
+
+    }
+}
+
+@media (width > 375px) and (width < 383px) {
+    .reviews {
+
+        &__subtitle {
+            
+            span {
+                font-size: 17px;
+            } 
+        }
+    }
+}
+
+@media (max-width: 375px) {
+    .container {
+        max-width: 100%;
+        padding: 0 15px;
+    }
+
+    .reviews {
+        padding-top: 80px;
 
         &__subtitle {
             margin-top: 10px;

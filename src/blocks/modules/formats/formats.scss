@@ -99,6 +99,7 @@
         text-decoration: underline;
         text-underline-offset: 3px;
         cursor: pointer;
+        transition: all 0.3s; 
 
         &_s-visible {
             display: none;
