@@ -20,22 +20,14 @@
         height: 65px;
         border: 1px solid rgba(16 16 16 / 60%);
         border-radius: 15px;
-        padding: 25px 46px 25px 27px;
+        padding: 25px 55px 25px 27px;
         font-size: 18px;
         line-height: 90%;
         letter-spacing: -0.02em;
 
         &::placeholder {
-            display: block;
-            white-space: pre-line;
-        }
-
-        &:focus {
-            border: none;
-        }
-
-        &_pt5 {
-            padding-top: 5px;
+            white-space: pre-wrap;
+            transition: all 0.3s;
         }
 
         &_textarea {
@@ -178,8 +170,9 @@
 }
 
 input {
+
     &:focus {
-        outline: 2px solid rgba(16 16 16 / 45%);
+        outline: 1px solid rgba(16 16 16 / 45%);
     }
 }
 
@@ -187,15 +180,12 @@ input[type="radio"] {
     background-color: #d9d9d9;;
     accent-color: $main-color;
     outline: unset;
-    border: 1px solid black;
-    
-}
-input#reviews-denied {
-    accent-color: rgb(0 0 0);
+    border: 1px solid black;   
 }
 
-#datepicker {
-    margin: 20px auto 30px auto;
+
+input#reviews-denied {
+    accent-color: rgb(0 0 0);
 }
 
 input#sign-date {
@@ -234,6 +224,66 @@ label.error {
 
 }
 
+input#sign-nickname, input#theme-nickname, input#reviews-nickname {
+    position: relative;
+    
+    &::placeholder {
+        display: block;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        max-width: 400px;   
+    }
+}
+
+// fade placeholder
+
+input::-webkit-input-placeholder {
+    color: #999;
+}
+input:focus::-webkit-input-placeholder {
+    color: transparent;
+}
+/* Firefox < 19 */
+input:-moz-placeholder {
+    color: #999;
+}
+input:focus:-moz-placeholder {
+    color: transparent;
+}
+/* Firefox > 19 */
+input::-moz-placeholder {
+    color: #999;
+}
+input:focus::-moz-placeholder {
+    color: transparent;
+}
+
+/* Internet Explorer 10 */
+input:-ms-input-placeholder {
+    color: #999;
+}
+input:focus:-ms-input-placeholder {
+    color: transparent;
+}
+
+input[name="phone"] {
+    color: unset;
+    &:focus {
+
+        &::placeholder {
+            color: rgba(16 16 16 / 60%);
+        }
+        
+    }
+}
+
+//calendar
+
+#datepicker {
+    margin: 20px auto 30px auto;
+}
+
 .ui-datepicker-header {
     background-color: $main-color;
     border-color: $main-color;
@@ -266,10 +316,3 @@ a.ui-state-default .ui-widget-content {
     border-color: $main-color;
 }
 
-/* td[data-handler] {
-    border: 2px solid rgba(16 16 16 / 30%);
-}
-
-table th span {
-    color: rgba(16 16 16 / 60%);
-} */

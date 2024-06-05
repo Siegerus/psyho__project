@@ -22,7 +22,6 @@
     }
 }
 
-
 @media (max-width: 600px) {
     .feed-form {
         
@@ -31,10 +30,34 @@
             &-img {
                 max-width: 130px;
             }
+
+            &-title {
+                font-size: 19px;
+                
+                &_instruction {
+                    max-width: 250px;
+                }
+            }
         }
 
         &__radio-wrapper {
             flex-direction: column; 
+        }
+
+    }
+
+    input#sign-nickname, input#theme-nickname, input#reviews-nickname {
+        
+        &::placeholder {
+            max-width: 350px;
+        }
+    }
+
+    input#instruction-social {
+
+        &::placeholder {
+            text-overflow: ellipsis;
+            white-space: nowrap;
         }
     }
 }
@@ -105,6 +128,7 @@
             }
         }
     }
+
     input#sign-nickname, input#theme-nickname, input#reviews-nickname {
         &::placeholder {
             font-size: 17px;
@@ -121,7 +145,6 @@
     }
 
     input#instruction-social {
-        padding-top: 20px;
         font-size: 16px;
         padding-left: 10px;
 
@@ -186,8 +209,9 @@
             }
 
             &-title {
-                font-size: 19px;
                 max-width: 170px;
+                white-space: unset;
+                font-size: 19px;
             }
 
             &-date ,&-duration, &-players {
@@ -214,7 +238,6 @@
     }
 
     input#instruction-social {
-        padding-top: 20px;
         font-size: 16px;
 
         &::placeholder {
@@ -225,6 +248,10 @@
 
 @media (width < 375px) {
     .feed-form {
+
+        &__label {
+            font-size: 18px;
+        }
 
         &__item {
 
@@ -249,7 +276,6 @@
     }
 
     input#instruction-social {
-        padding-top: 15px;
         font-size: 16px;
 
         &::placeholder {

@@ -94,6 +94,7 @@ $(document).ready(function(){
             input.attr('placeholder', currentPlaсeholder);
         })
     });
+    
 
 
     $('#theme-form').validate({
