@@ -48,7 +48,7 @@
         <div class="modal__close"></div>
     <div class="modal modal_sign-succes">
         <div class="circle circle_modal"><img src="img/icons/cool.svg" alt="cool"></div>
-        <h2 class="modal__title title title_tac title_red title_nobrd title_fz42">Запрос успешно отправлен!</h2>
+        <h2 class="modal__title modal__title_succes title title_tac title_red title_nobrd title_fz42">Запрос успешно отправлен!</h2>
         <div class="modal__subtitle">Благодарим за заявку! Мы свяжемся с вами в течении 24 часов.</div>
         <div class="modal__links modal__links_mt20">
             Если в течение 24 часов вы не получите обратную связь, напишите, пожалуйста, мне напрямую
@@ -77,19 +77,19 @@
                     <div class="feed-form__label">Выберите месседжер для связи:</div>
                     <div class="feed-form__radio-wrapper">
                         <div>
-                            <input class="feed-form__radio feed-form__radio_social" type="radio" name="social" id="reviews-telegram"> 
+                            <input class="feed-form__radio feed-form__radio_social" type="radio" name="social" id="reviews-telegram" value="Telegram"> 
                             <label class="feed-form__radio-label" for="reviews-telegram">Telegram</label>
                         </div>
                         <div>
-                            <input class="feed-form__radio feed-form__radio_social" type="radio" name="social" id="reviews-Instagram"> 
+                            <input class="feed-form__radio feed-form__radio_social" type="radio" name="social" id="reviews-Instagram" value="Instagram"> 
                             <label class="feed-form__radio-label" for="reviews-Instagram">Instagram</label>
                         </div>
                         <div>
-                            <input class="feed-form__radio feed-form__radio_social" type="radio" name="social" id="reviews-WhatsApp"> 
+                            <input class="feed-form__radio feed-form__radio_social" type="radio" name="social" id="reviews-WhatsApp" value="Whatsapp"> 
                             <label class="feed-form__radio-label" for="reviews-WhatsApp">WhatsApp </label>
                         </div>
                         <div>
-                            <input class="feed-form__radio feed-form__radio_social" type="radio" name="social" id="reviews-Viber"> 
+                            <input class="feed-form__radio feed-form__radio_social" type="radio" name="social" id="reviews-Viber" value="Viber"> 
                             <label class="feed-form__radio-label" for="reviews-Viber">Viber</label>
                         </div>
                 </div>
@@ -101,7 +101,7 @@
                     <span class="feed-form__error-box feed-form__error-box_denied"></span>
                 </div>
                 <div class="feed-form__denied">
-                    <input class="feed-form__radio feed-form__radio_denied" type="radio" name="social" id="reviews-denied"> 
+                    <input class="feed-form__radio feed-form__radio_denied" type="radio" name="social" id="reviews-denied" value="Denied"> 
                     <label class="feed-form__radio-label feed-form__radio-label_denied" for="reviews-denied">Нет, со мной не нужно связываться, я просто хочу оставить отзыв.</label>
                 </div>
                 <label class="feed-form__label" for="reviews-textarea">Текст отзыва:</label>
@@ -114,7 +114,7 @@
         <div class="modal__close"></div>
         <div class="modal modal_reviews-succes">
             <div class="circle circle_modal"><img src="img/icons/cool.svg" alt="cool"></div>
-            <h2 class="modal__title title title_tac title_red title_nobrd title_fz42">Отзыв успешно отправлен!</h2>
+            <h2 class="modal__title modal__title_succes title title_tac title_red title_nobrd title_fz42">Отзыв успешно отправлен!</h2>
             <div class="modal__subtitle">Благодарим вас за отзыв! После проверки на спам, мы разместим <br> его на сайте.</div>
             <div class="modal__links modal__links_mt20">
                 В случае, если у вас остались какие-то вопросы, вы всегда можете написать мне напрямую <br>
@@ -135,7 +135,7 @@
             </div>
             <div class="feed-form__label">Выберите тему:</div>
             <div class="feed-form__error-box"></div>
-            <input type="radio" id="first-theme-radio" class="theme-radio" name="theme">
+            <input type="radio" id="first-theme-radio" class="theme-radio" name="theme" value="'Психосоматика: тело и душа'">
             <label class="feed-form__radio-block" for="first-theme-radio">
                 <span class="feed-form__item">
                     <span class="feed-form__item-body">
@@ -158,7 +158,7 @@
                     <span class="feed-form__item-img"><img src="img/modal/theme.png" alt="theme"></span>
                 </span>
             </label>  
-            <input type="radio" id="second-theme-radio" class="theme-radio" name="theme">
+            <input type="radio" id="second-theme-radio" class="theme-radio" name="theme" value="'Путь к себе или кто я такой?'">
             <label class="feed-form__radio-block" for="second-theme-radio">
                 <span class="feed-form__item">
                     <span class="feed-form__item-body">
@@ -187,26 +187,26 @@
                 <div class="feed-form__label">Выберите месседжер для связи:</div>
                 <div class="feed-form__radio-wrapper">
                     <div>
-                        <input class="feed-form__radio feed-form__radio_social" type="radio" name="social" id="theme-telegram"> 
+                        <input class="feed-form__radio feed-form__radio_social" type="radio" name="social" id="theme-telegram" value="Telegram"> 
                         <label class="feed-form__radio-label" for="theme-telegram">Telegram</label>
                     </div>
                     <div>
-                        <input class="feed-form__radio feed-form__radio_social" type="radio" name="social" id="theme-Instagram"> 
+                        <input class="feed-form__radio feed-form__radio_social" type="radio" name="social" id="theme-Instagram" value="Instagram"> 
                         <label class="feed-form__radio-label" for="theme-Instagram">Instagram</label>
                     </div>
                     <div>
-                        <input class="feed-form__radio feed-form__radio_social" type="radio" name="social" id="theme-WhatsApp"> 
+                        <input class="feed-form__radio feed-form__radio_social" type="radio" name="social" id="theme-WhatsApp" value="WhatsApp"> 
                         <label class="feed-form__radio-label" for="theme-WhatsApp">WhatsApp </label>
                     </div>
                     <div>
-                        <input class="feed-form__radio feed-form__radio_social" type="radio" name="social" id="theme-Viber"> 
+                        <input class="feed-form__radio feed-form__radio_social" type="radio" name="social" id="theme-Viber" value="Viber"> 
                         <label class="feed-form__radio-label" for="theme-Viber">Viber</label>
                     </div>
             </div>
             </div>
             <input id="theme-nickname" name="nickname" class="feed-form__input feed-form__input_pt5" type="text" placeholder="Как вас найти в (введите ваш ник или номер телефона)">
-            <label class="feed-form__label" for="theme-mail">Ваш email:</label>
-            <input id="theme-mail" name="mail" type="email" class="feed-form__input" placeholder="Введите Ваш email">
+            <label class="feed-form__label" for="theme-email">Ваш email:</label>
+            <input id="theme-email" name="email" type="email" class="feed-form__input" placeholder="Введите Ваш email">
 
             <button id="modal-theme-button" class="button button_mt75">забронировать место</button>
         </form> 
@@ -216,7 +216,7 @@
         <div class="modal__close"></div>
         <div class="modal modal_theme-succes">
             <div class="circle circle_modal"><img src="img/icons/cool.svg" alt="cool"></div>
-            <h2 class="modal__title title title_tac title_red title_nobrd title_fz42">Запрос успешно отправлен!</h2>
+            <h2 class="modal__title modal__title_succes title title_tac title_red title_nobrd title_fz42">Запрос успешно отправлен!</h2>
             <div class="modal__subtitle">Благодарим за заявку! Мы свяжемся с вами в течении 24 часов.</div>
             <div class="modal__links modal__links_mt20">
                 Если в течение 24 часов вы не получите обратную связь, напишите, пожалуйста, мне напрямую
@@ -239,7 +239,7 @@
                 </div>
                 <div class="feed-form__label">Выберите тему:</div>
                 <div class="feed-form__error-box"></div>
-                <input type="radio" id="first-instruction-radio" class="instructions-radio"  name="instruction">
+                <input type="radio" id="first-instruction-radio" class="instructions-radio"  name="instruction" value="'Тревога: самопомощь'">
                 <label class="feed-form__radio-block" for="first-instruction-radio">
                     <span class="feed-form__item feed-form__item_instruction">
                         <span class="feed-form__item-body">
@@ -265,7 +265,7 @@
                         </span>
                     </span>
                 </label>
-                <input type="radio" id="second-instruction-radio" class="instructions-radio" name="instruction">
+                <input type="radio" id="second-instruction-radio" class="instructions-radio" name="instruction" value="'Зависимости: самопомощь'">
                 <label class="feed-form__radio-block" for="second-instruction-radio">
                     <span class="feed-form__item">
                         <span class="feed-form__item-body">
@@ -292,8 +292,8 @@
                 <input id="instructions-user" name="user" type="text" class="feed-form__input" placeholder="Введите Ваше имя">
                     <label for="instruction-social" class="feed-form__label">Любой месседжер для связи:</label>
                     <input class="feed-form__input feed-form__input_social" type="text" name="social" id="instruction-social" placeholder="Telegram  /  Instagram  /  WhatsApp  /  Viber"> 
-                <label class="feed-form__label" for="instructions-mail">Ваш email:</label>
-                <input id="instructions-mail" name="mail" type="email" class="feed-form__input" placeholder="Введите Ваш email">
+                <label class="feed-form__label" for="instructions-email">Ваш email:</label>
+                <input id="instructions-email" name="email" type="email" class="feed-form__input" placeholder="Введите Ваш email">
 
                 <button id="modal-instructions-button" class="button button_mt75">Купить инструкцию</button>
             </form> 
@@ -304,7 +304,7 @@
     
         <div class="modal modal_instructions-succes">
             <div class="circle circle_modal"><img src="img/icons/cool.svg" alt="cool"></div>
-            <h2 class="modal__title title title_tac title_red title_nobrd title_fz42">Вы выбрали инструкцию</h2>
+            <h2 class="modal__title modal__title_succes title title_tac title_red title_nobrd title_fz42">Вы выбрали инструкцию</h2>
 
             <div class="feed-form__radio-block">
                 

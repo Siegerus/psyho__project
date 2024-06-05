@@ -16,7 +16,7 @@ $(document).ready(function(){
         firstDay: 1,
         isRTL: false,
         showMonthAfterYear: false,
-        yearSuffix: ''
+        yearSuffix: '',
         
     };
     $.datepicker.setDefaults($.datepicker.regional['ru']);
@@ -28,13 +28,6 @@ $(document).ready(function(){
     });
     
     $("#datepicker").datepicker("setDate", $('#sign-date').val());
-    /* $("#datepicker").datepicker("option", "dateFormat", "dd-mm-yy"); */
-    /* $( "#datepicker" ).datepicker( "refresh" ); */
-    /* $( "#datepicker" ).datepicker( "option", "buttonImage", "img/modal/theme.png" );
-    $("#datepicker").datepicker( "option", "showOn", "button" );
-    $("#datepicker").datepicker( "option", "buttonImageOnly", true ); */
-    /* $("#datepicker").datepicker( "option", "navigationAsDateFormat", true);
-    $("#datepicker").datepicker( "option", "nextText", "Later" ); */
     
 
     function closeModal(item) {

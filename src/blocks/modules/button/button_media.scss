@@ -28,16 +28,24 @@
     .container {
         max-width: 540px;
     }
+
+    .button {
+        padding: 36px 60px;
+        
+        &_mt55 {
+            padding: 36px 30px;
+        }
+    }
 }
 
 @media (max-width: 576px) {
 
     .button {
-        padding: 30px 35px;
+        padding: 30px 30px;
         font-size: 21px;
 
         &_mt75 {
-            margin-top: 50px;
+            margin-top: 40px;
         }
     }
 
@@ -56,13 +64,24 @@
         &_mt75 {
             margin-top: 45px;
         }
+        &_mt55 {
+            margin-top: 45px;
+            padding: 25px 10px;
+            font-size: 16px;
+        } 
+
+        &_succes {
+            margin-top: 33px;
+        }
+
+        
     }
 
 }
 
 @media (width < 375px) {
     .button {
-        padding: 25px 17px;
+        padding: 25px 10px;
     }
 
 }

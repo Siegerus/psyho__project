@@ -42,5 +42,10 @@
         display: block;
         text-decoration: none;
         cursor: pointer;
+
+        &:hover {
+            box-shadow: 2px 2px 20px #d4c9c9;
+            background-color: #ffffffe7;
+        }
     }
 }

@@ -45,16 +45,5 @@ $(document).ready(function(){
                 
     });
 
-
-      /* '<div class="modal__close modal__close_popup"></div>' */
-      /* '<button title="%title%" type="button" class="mfp-close"></button>' */
-
-
-
-
-
-
-
-
 });
 

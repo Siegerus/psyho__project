@@ -55,6 +55,7 @@
         height: 36px;
         opacity: 0.2;
         cursor: pointer;
+        transition: all 0.3s;
 
         &:hover {
             width: 36px;
@@ -115,3 +116,34 @@
         color: rgba(16 16 16 / 60%);
     }
 }
+
+/* .modal {
+    display: block;
+
+}
+
+.modal_instructions-succes  {
+    display: none;
+    position: absolute;
+}
+
+.modal_instructions {
+    display: none;
+}
+
+.modal_theme-succes, .modal_theme, .modal_reviews-succes, .modal_sign, .modal_reviews {
+    display: none;
+    position: absolute;
+}
+
+.modal_sign-succes {
+    display: block;
+}
+
+.modal__wrapper {
+    display: block;
+}
+
+.overlay {
+    display: block;
+} */

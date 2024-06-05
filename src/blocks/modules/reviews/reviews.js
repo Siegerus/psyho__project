@@ -24,5 +24,7 @@ $(document).ready(function(){
         $reviews.eq(newActiveElementIndex).addClass('reviews__content_active');
     });
 
+    
+
 
 });

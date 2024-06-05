@@ -56,7 +56,7 @@ $(document).ready(function(){
             }
     });
 
-    $('#sign-time').on('input', function(){
+    $('#sign-time, #sign-date').on('input', function(){
         this.value = this.value.replace(/[^0-9\.\,\:\ ]/g, '');
     });
     $('#sign-time').mask("9?9 : 99", {placeholder: "_"});
@@ -119,7 +119,7 @@ $(document).ready(function(){
             nickname: {
                 rangelength: [3, 30] 
             },
-            mail: {
+            email: {
                 required: true,
                 justmail: true,
                 email: false
@@ -137,7 +137,7 @@ $(document).ready(function(){
                 required:"Пожалуйста, укажите ник или номер телефона",
                 rangelength: "Введите от {2} до {30} символов"
             },
-            mail: {
+            email: {
                 required: "Пожалуйста, введите свою почту",
                 justmail: "Неправильный адрес почты"
             }
@@ -169,7 +169,7 @@ $(document).ready(function(){
                     required: true,
                     rangelength: [2, 10]      
                 },
-                mail: {
+                email: {
                     required: true,
                     justmail: true,
                     email: false
@@ -187,7 +187,7 @@ $(document).ready(function(){
                     required:"Пожалуйста, укажите соц. сеть для связи",
                     rangelength: "Введите от {2} до {10} символов"
                 },
-                mail: {
+                email: {
                     required: "Пожалуйста, введите свою почту",
                     justmail: "Неправильный адрес почты"
                 }
@@ -259,7 +259,8 @@ $(document).ready(function(){
         
     $('#reviews-denied').on('click', function(){
         if ($('.feed-form__radio_social').prop('checked') == false) {
-            $('input#reviews-nickname').prop('disabled', true) 
+            $('input#reviews-nickname').prop('disabled', true)
+            $('input#reviews-nickname').val('')  
         } 
         $('.feed-form__radio_social, .modal__close').on('click', function(){
             $('input#reviews-nickname').prop('disabled', false)
@@ -274,7 +275,7 @@ $(document).ready(function(){
         }
         $.ajax({
             type: "POST",
-            url: "mailer/smart.php",
+            url: "mailer/sign-form.php",
             data: $(this).serialize()}).done(function() {
                 $(this).find("input").val("");
                 $('.modal_sign-succes').fadeIn('slow');
@@ -290,7 +291,7 @@ $(document).ready(function(){
         }
         $.ajax({
             type: "POST",
-            url: "mailer/smart.php",
+            url: "mailer/theme-form.php",
             data: $(this).serialize()}).done(function() {
                 $('.modal_theme-succes .feed-form__radio-block').html($('.modal_theme input.theme-radio:checked + .feed-form__radio-block').html());
                 $(this).find("input").val("");
@@ -307,7 +308,7 @@ $(document).ready(function(){
         }
         $.ajax({
             type: "POST",
-            url: "mailer/smart.php",
+            url: "mailer/instructions-form.php",
             data: $(this).serialize()}).done(function() {
                 $('.modal_instructions-succes .feed-form__radio-block').html($('.modal_instructions input.instructions-radio:checked + .feed-form__radio-block').html());
                 $(this).find("input").val("");
@@ -324,7 +325,7 @@ $(document).ready(function(){
         }
         $.ajax({
             type: "POST",
-            url: "mailer/smart.php",
+            url: "mailer/reviews-form.php",
             data: $(this).serialize()}).done(function() {
                 $(this).find("input").val("");
                 $('.modal_reviews-succes').fadeIn('slow')

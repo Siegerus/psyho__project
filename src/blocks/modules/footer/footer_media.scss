@@ -236,15 +236,16 @@
 
         &__social {
             flex-wrap: wrap;
+            max-width: 450px;
         }
 
-        &__social-link {
+        &__social-link {      
             margin-right: 19px;
-            margin-bottom: 10px;
+            margin-bottom: 20px;
         }
 
         &__copyright {
-            margin-top: 20px;
+            margin-top: 10px;
             max-width: 250px;
             font-size: 16px;
 
