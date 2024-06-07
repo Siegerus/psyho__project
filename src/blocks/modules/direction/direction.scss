@@ -9,15 +9,15 @@
     }
 
     &__wrapper {
-        padding: 64px 0 0 92px;
         display: grid;
         align-content: first baseline;
+        justify-content: center;
+        padding: 64px 0 0 92px;
         grid-template-columns: 60px 840px;
         grid-template-rows: minmax(201px, auto) minmax(259px, auto) minmax(238px, auto) minmax(244px, auto);
         grid-auto-rows: auto;
         column-gap: 50px;
         row-gap: 101px;
-        justify-content: center;
     }
 
     &__header {

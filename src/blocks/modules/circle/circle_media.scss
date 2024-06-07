@@ -24,6 +24,7 @@
     .container {
         max-width: 695px;
     }
+
     .circle {
         &_direction {
             top: auto;
@@ -33,8 +34,8 @@
             height: 175px;
 
             &::before {
-                left: 13px;
                 bottom: 12px;
+                left: 13px;
                 width: 170px;
                 height: 175px;
             }
@@ -64,19 +65,18 @@
             font-size: 14px;
 
             &::before {
-                left: -20px;
                 bottom: 0;
+                left: -20px;
                 width: 180px;
                 height: 180px;
             }
-
         }
 
         &_footer {
             width: 100px;
             height: 100px;
 
-            &:hover { 
+            &:hover {
                 background-color: $main-color;
             }
 
@@ -88,11 +88,11 @@
     }
 }
 
-@media (max-width: 767px) {                     
-                                                     
+@media (max-width: 767px) {
     .container {
         max-width: 540px;
     }
+
     .circle {
         &_promo {
             top: 171px;
@@ -103,8 +103,8 @@
             right: 90px;
 
             &::before {
+                bottom: 0;
                 left: 17px;
-                bottom: 0px;
                 width: 175px;
                 height: 175px;
             }
@@ -131,8 +131,8 @@
             font-size: 14px;
 
             &::before {
-                left: -12px;
                 bottom: 13px;
+                left: -12px;
                 width: 160px;
                 height: 160px;
             }
@@ -147,7 +147,6 @@
     }
 
     .circle {
-
         &_promo {
             top: 125px;
             left: 10px;
@@ -167,15 +166,16 @@
         }
 
         &_direction {
-            bottom: -230px;
             right: 38px;
+            bottom: -230px;
         }
+
         &_diploms {
             top: 15px;
             right: 15px;
             width: 100px;
             height: 87px;
-            
+
 
             &::before {
                 left: 9px;
@@ -203,25 +203,24 @@
                 width: 21px;
                 height: 25px;
             }
-        
+
             &::before {
                 left: 5px;
                 width: 86px;
                 height: 86px;
             }
-
         }
 
         &_direction {
-            bottom: -96px;
             right: 55px;
+            bottom: -96px;
             width: 150px;
             height: 150px;
             font-size: 13px;
-            
+
             &::before {
+                bottom: 0;
                 left: 17px;
-                bottom: 0px;
                 width: 150px;
                 height: 150px;
             }
@@ -263,11 +262,11 @@
         }
 
         &_modal {
-            width: 120px; 
+            width: 120px;
             height: 120px;
 
             &::before {
-                width: 130px; 
+                width: 130px;
                 height: 130px;
             }
 

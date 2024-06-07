@@ -38,11 +38,11 @@
         line-height: 110%;
         color: #fff;
         text-transform: uppercase;
-        cursor: pointer;  
-        transition: all 0.4s;   
+        cursor: pointer;
+        transition: all 0.4s;
 
         &:hover {
-            box-shadow: 3px 3px 20px $main-color; 
+            box-shadow: 3px 3px 20px $main-color;
             background-color: #ca4a41;
         }
 
@@ -80,10 +80,10 @@
         color: #fff;
         text-transform: uppercase;
         cursor: pointer;
-        transition: all 0.4s; 
+        transition: all 0.4s;
 
         &:hover {
-            box-shadow: 3px 3px 20px $main-color; 
+            box-shadow: 3px 3px 20px $main-color;
             background-color: #ca4a41;
         }
 
@@ -103,7 +103,7 @@
             display: none;
         }
 
-        &:hover { 
+        &:hover {
             background-color: #ca4a41;
         }
     }

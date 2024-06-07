@@ -1,6 +1,7 @@
 .promo__photo_m-visible {
     display: none;
 }
+
 .header {
     display: flex;
     justify-content: space-between;
@@ -11,7 +12,7 @@
         line-height: 110%;
         text-transform: uppercase;
         cursor: pointer;
-        transition: all 0.3s; 
+        transition: all 0.3s;
 
         &:hover {
             color: $main-color;

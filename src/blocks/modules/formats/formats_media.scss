@@ -1,5 +1,4 @@
 @media (max-width: 1439px) {
-
     .container {
         max-width: 1200px;
         padding-left: 30px;
@@ -7,6 +6,7 @@
 
     .formats {
         padding-top: 175px;
+
         &__wrapper {
             grid-template-columns: 100px 490px 550px;
             column-gap: 10px;
@@ -17,16 +17,17 @@
         }
     }
 }
-@media (max-width: 1200px) {
 
+@media (max-width: 1200px) {
     .container {
         max-width: 968px;
         padding-right: 0;
     }
+
     .formats {
         &__wrapper {
             justify-content: center;
-            grid-template-columns:  50px 850px;
+            grid-template-columns: 50px 850px;
             grid-template-rows: repeat(4, auto);
             margin-top: 85px;
         }
@@ -35,8 +36,8 @@
             align-items: center;
             justify-content: space-around;
             grid-column: 2 / 3;
-            
         }
+
         &__item {
             justify-self: center;
             width: 800px;
@@ -45,43 +46,43 @@
         &__body {
             width: 815px;
             text-align: justify;
+            font-size: 16px;
+            line-height: 1.6;
         }
 
         &__br {
             display: none;
         }
-    
+
         &__header {
             display: flex;
             justify-content: flex-start;
             font-size: 31px;
+
             span {
                 font-size: 32px;
                 margin-left: 10px;
             }
         }
-        &__body {
-            font-size: 16px;
-            line-height: 1.6;
-        }
+
         &__sign {
             font-size: 20px;
             line-height: 1.2;
             text-transform: uppercase;
         }
-            
+
         &__time {
             align-items: center;
-    
+
             &-min {
                 font-size: 36px;
                 line-height: 1.1;
-    
+
                 span {
                     font-size: 26px;
                 }
-            }      
-                
+            }
+
             &-descr {
                 text-align: right;
                 font-size: 20px;
@@ -90,10 +91,9 @@
         }
 
         &__price {
-
             &-cost {
                 font-size: 36px;
-            } 
+            }
         }
 
         &__overlay {
@@ -107,8 +107,9 @@
             line-height: 1.1;
             text-align: center;
         }
-    } 
+    }
 }
+
 @media (max-width: 992px) {
     .container {
         max-width: 695px;
@@ -145,14 +146,14 @@
             &_l-visible {
                 display: flex;
             }
-        
         }
+
         &__item {
             padding-top: 0;
             justify-self: flex-start;
             width: 482px;
-
         }
+
         &__body {
             margin-top: 29px;
             width: 445px;
@@ -169,12 +170,13 @@
             display: flex;
             justify-content: flex-start;
             font-size: 31px;
+
             span {
                 font-size: 32px;
                 margin-left: 10px;
             }
         }
-        
+
         &__sign {
             font-size: 20px;
             line-height: 1.2;
@@ -187,7 +189,7 @@
                 height: 33px;
             }
         }
-            
+
         &__time {
             align-items: flex-end;
             justify-content: center;
@@ -198,24 +200,24 @@
                     line-height: 110%;
                 }
             }
-    
+
             &-descr {
                 font-size: 20px;
                 line-height: 1.2;
                 text-align: right;
-            }       
+            }
         }
-        
+
         &__price {
             width: 75px;
-                
+
             &-descr {
                 text-align: center;
             }
 
             &-cost {
                 font-size: 36px;
-            } 
+            }
         }
 
         &__unavailable {
@@ -224,16 +226,15 @@
             font-size: 35px;
             line-height: 1.1;
             text-align: center;
-           
         }
 
         &__overlay {
             grid-row: 3 / 4;
         }
-    } 
+    }
 }
-@media (max-width: 767px) {                     
-                                                     
+
+@media (max-width: 767px) {
     .container {
         max-width: 540px;
     }
@@ -250,7 +251,6 @@
         }
 
         &__icon {
-
             &_m-visible {
                 display: flex;
                 align-items: center;
@@ -258,6 +258,7 @@
                 margin-right: 10px;
                 height: 60px;
             }
+
             &_m-hidden {
                 display: none;
             }
@@ -282,7 +283,7 @@
         &__item {
             justify-self: center;
         }
-        
+
         &__body {
             margin-top: 15px;
             width: 100%;
@@ -302,8 +303,7 @@
         }
 
         &__time-min {
-
-            span{
+            span {
                 font-size: 20px;
             }
         }
@@ -362,7 +362,6 @@
         }
 
         &__time {
-
             &-min {
                 font-size: 28px;
 
@@ -370,21 +369,20 @@
                     font-size: 11px;
                 }
             }
-    
+
             &-descr {
                 font-size: 16px;
-            }       
+            }
         }
 
         &__price {
-                
             &-descr {
-               font-size: 16px;
+                font-size: 16px;
             }
 
             &-cost {
                 font-size: 28px;
-            } 
+            }
         }
 
         &__unavailable {
@@ -413,7 +411,7 @@
 
             span {
                 font-size: 20px;
-            } 
+            }
         }
 
         &__body {
@@ -474,7 +472,7 @@
             margin-top: 4px;
             font-size: 26px;
 
-            span{
+            span {
                 font-size: 20px;
             }
         }

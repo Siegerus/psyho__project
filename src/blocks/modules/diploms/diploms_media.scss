@@ -2,22 +2,23 @@
     .container {
         max-width: 1200px;
     }
-
 }
+
 @media (max-width: 1200px) {
     .container {
         max-width: 968px;
     }
+
     .diploms {
         padding-top: 160px;
-    
+
         &__slider {
             width: 966px;
-            margin-left: 0; 
+            margin-left: 0;
         }
     }
-    
 }
+
 @media (max-width: 992px) {
     .container {
         max-width: 695px;
@@ -25,70 +26,73 @@
 
     .diploms {
         padding-top: 90px;
-    
-        &__slider {
-            width: 698px;
-            margin-top: 15px;
-        }
-    
-        &__img {
-            margin: 0 auto;
-            width: auto;
-            height: 496px;
-            object-fit: cover;
-        }
-    
-        &__wrapper {
-            position: relative;
-        }
 
         .slick-arrow {
             border: none;
         }
-        
+
         .arrow_prev, .arrow_next {
             @include arrows;
+
             right: 39px;
             bottom: -32px;
         }
-        
+
         .arrow_prev {
             right: 119px;
         }
+
+        &__slider {
+            width: 698px;
+            margin-top: 15px;
+        }
+
+        &__img {
+            width: auto;
+            height: 496px;
+            margin: 0 auto;
+            object-fit: cover;
+        }
+
+        &__wrapper {
+            position: relative;
+        }
     }
 }
-@media (max-width: 767px) {                     
-                                                     
+
+@media (max-width: 767px) {
     .container {
         max-width: 540px;
     }
 
     .diploms {
         padding-top: 90px;
-    
-        &__slider {
-            width: 540px;
-            margin-top: 20px;
-        }
-    
-        &__img {
-            width: auto;
-            height: 405px;
-        }
-       
+
         .arrow_prev, .arrow_next {
             @include arrows;
+
+            right: 35px;
+            bottom: 0;
             width: 60px;
             height: 60px;
-            right: 35px;
-            bottom: 0px;
+
             img {
                 width: 45px;
             }
         }
-        
+
         .arrow_prev {
             right: 96px;
+        }
+
+        &__slider {
+            width: 540px;
+            margin-top: 20px;
+        }
+
+        &__img {
+            width: auto;
+            height: 405px;
         }
     }
 }
@@ -98,9 +102,10 @@
         max-width: 100%;
         padding: 0 15px;
     }
+
     .diploms {
         &__slider {
-            margin-top: -5px; 
+            margin-top: -5px;
             width: 100%;
             font-size: 20px;
         }
@@ -110,7 +115,7 @@
             height: 206px;
         }
 
-        &__title { 
+        &__title {
             span {
                 margin-left: 6px;
                 padding-left: 7px;
@@ -131,10 +136,12 @@
 
         .arrow_prev, .arrow_next {
             @include arrows;
-            width: 30px;
-            height: 29px;
+
             right: 30px;
             bottom: 20px;
+            width: 30px;
+            height: 29px;
+
             img {
                 width: 19px;
             }
@@ -146,21 +153,21 @@
     }
 }
 
-@media (width > 480px) and (width < 577px)  {
+@media (width > 480px) and (width < 577px) {
     .diploms {
         &__img {
             width: auto;
             height: 325px;
-        }  
+        }
     }
 }
 
-@media (width > 375px) and (width < 481px)  {
+@media (width > 375px) and (width < 481px) {
     .diploms {
         &__img {
             width: auto;
             height: 270px;
-        }  
+        }
     }
 }
 
@@ -169,7 +176,7 @@
         padding-top: 78px;
 
         &__title {
-            width: 180px;   
+            width: 180px;
         }
     }
 }

@@ -1,21 +1,18 @@
 @media (max-width: 1439px) {
-
     .container {
         max-width: 1200px;
     }
-
 }
-@media (max-width: 1200px) {
 
+@media (max-width: 1200px) {
     .container {
         max-width: 968px;
     }
 
     .reviews {
-
         &__subtitle {
             font-size: 24px;
-    
+
             span {
                 font-size: 26px;
             }
@@ -31,16 +28,15 @@
             display: none;
             flex-direction: column;
             align-items: center;
-    
+
             &_active {
                 display: flex;
             }
         }
-    } 
+    }
 }
 
 @media (max-width: 992px) {
-
     .container {
         max-width: 695px;
     }
@@ -51,7 +47,7 @@
         &__subtitle {
             margin-top: 20px;
             font-size: 24px;
-    
+
             span {
                 font-size: 26px;
             }
@@ -77,22 +73,21 @@
         }
 
         &__arrow-prev, &__arrow-next {
-        @include arrows;
+            @include arrows;
 
-        right: 65px;
-        bottom: -40px;
-        width: 87px;
-        height: 96px;
-    }
+            right: 65px;
+            bottom: -40px;
+            width: 87px;
+            height: 96px;
+        }
 
-    &__arrow-prev {
-        right: 155px;
+        &__arrow-prev {
+            right: 155px;
+        }
     }
-    }
-    
 }
-@media (max-width: 767px) {                     
-                                                     
+
+@media (max-width: 767px) {
     .container {
         max-width: 540px;
     }
@@ -104,7 +99,7 @@
             margin-top: 20px;
             width: auto;
             font-size: 24px;
-    
+
             span {
                 font-size: 26px;
             }
@@ -132,8 +127,8 @@
         }
 
         &__header {
-            height: 100px;
             align-items: center;
+            height: 100px;
         }
 
         &__name {
@@ -161,12 +156,12 @@
         }
 
         &__arrow-prev, &__arrow-next {
-        @include arrows;
+            @include arrows;
 
-        right: 65px;
-        bottom: 0;
-        width: 60px;
-        height: 60px;
+            right: 65px;
+            bottom: 0;
+            width: 60px;
+            height: 60px;
         }
 
         &__arrow-prev {
@@ -191,7 +186,7 @@
 
         &__subtitle {
             font-size: 18px;
-            max-width: 400px; 
+            max-width: 400px;
 
             span {
                 font-size: 18px;
@@ -218,7 +213,7 @@
 
         &__header {
             height: 80px;
-        } 
+        }
 
         &__name {
             font-size: 27px;
@@ -233,18 +228,15 @@
             margin-right: 20px;
             width: 80px;
         }
-
     }
 }
 
 @media (width > 375px) and (width < 383px) {
     .reviews {
-
         &__subtitle {
-            
             span {
                 font-size: 17px;
-            } 
+            }
         }
     }
 }
@@ -276,7 +268,6 @@
             padding: 8px 39px 8px 16px;
 
             span {
-    
                 &::before {
                     right: -30px;
                     width: 25px;
@@ -292,7 +283,7 @@
         &__item {
             margin-bottom: 4px;
             min-height: auto;
-            
+
             &:nth-child(2) {
                 margin-top: 47px;
                 margin-bottom: 75px;
@@ -336,31 +327,20 @@
 
         &__arrow-prev, &__arrow-next {
             @include arrows;
-    
+
             right: 20px;
             bottom: 18px;
             width: 30px;
             height: 30px;
 
-             img {
+            img {
                 width: 20px;
                 height: 20px;
-             }
             }
-    
-            &__arrow-prev {
-                right: 51px;
-            }
+        }
 
-        
-
-        
-
-
-
-
-
-
-
+        &__arrow-prev {
+            right: 51px;
+        }
     }
 }

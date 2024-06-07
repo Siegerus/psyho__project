@@ -2,7 +2,6 @@
     .container {
         max-width: 1200px;
     }
-    
 }
 
 @media (max-width: 1200px) {
@@ -15,23 +14,22 @@
     .container {
         max-width: 695px;
     }
-    .button {
 
+    .button {
         &:hover {
             background-color: $main-color;
         }
     }
 }
 
-@media (max-width: 767px) {                     
-                                                     
+@media (max-width: 767px) {
     .container {
         max-width: 540px;
     }
 
     .button {
         padding: 36px 60px;
-        
+
         &_mt55 {
             padding: 36px 30px;
         }
@@ -39,16 +37,14 @@
 }
 
 @media (max-width: 576px) {
-
     .button {
-        padding: 30px 30px;
+        padding: 30px;
         font-size: 21px;
 
         &_mt75 {
             margin-top: 40px;
         }
     }
-
 }
 
 @media (max-width: 425px) {
@@ -56,7 +52,7 @@
         max-width: 100%;
         padding: 0 15px;
     }
-    
+
     .button {
         padding: 25px 20px;
         font-size: 18px;
@@ -64,24 +60,21 @@
         &_mt75 {
             margin-top: 45px;
         }
+
         &_mt55 {
             margin-top: 45px;
             padding: 25px 10px;
             font-size: 16px;
-        } 
+        }
 
         &_succes {
             margin-top: 33px;
         }
-
-        
     }
-
 }
 
 @media (width < 375px) {
     .button {
         padding: 25px 10px;
     }
-
 }

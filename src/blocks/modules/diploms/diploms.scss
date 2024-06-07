@@ -4,13 +4,13 @@
     &__slider {
         position: relative;
         width: 966px;
-        margin: 42px 0 0 23px;  
+        margin: 42px 0 0 23px;
     }
 
     &__img {
-        margin: 0 auto;
         width: auto;
         height: 689px;
+        margin: 0 auto;
         object-fit: cover;
     }
 
@@ -22,7 +22,7 @@
 //slick
 
 .slick-slider {
-touch-action: auto;
+    touch-action: auto;
 }
 
 .slick-arrow {
@@ -38,7 +38,6 @@ touch-action: auto;
 }
 
 // popup
-
 
 .mfp-close {
     img {

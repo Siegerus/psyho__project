@@ -24,37 +24,30 @@
 
 @media (max-width: 600px) {
     .feed-form {
-        
         &__item {
 
             &-img {
-                max-width: 130px;
+
+                &_theme {
+                    max-width: 130px;
+                }
             }
 
             &-title {
                 font-size: 19px;
-                
+
                 &_instruction {
-                    max-width: 250px;
+                    max-width: 215px;
                 }
             }
         }
 
         &__radio-wrapper {
-            flex-direction: column; 
-        }
-
-    }
-
-    input#sign-nickname, input#theme-nickname, input#reviews-nickname {
-        
-        &::placeholder {
-            max-width: 350px;
+            flex-direction: column;
         }
     }
 
     input#instruction-social {
-
         &::placeholder {
             text-overflow: ellipsis;
             white-space: nowrap;
@@ -63,9 +56,7 @@
 }
 
 @media (max-width: 576px) {
-
     .feed-form {
-
         &__label {
             margin-top: 28px;
             font-size: 22px;
@@ -76,10 +67,18 @@
             margin-top: 20px;
             padding-left: 12px;
             font-size: 19px;
+
+            &_pt5 {
+                padding-right: 20px;
+
+                &::placeholder {
+                    font-size: 17px;
+                }
+            }
         }
 
         &__radio-wrapper {
-            flex-direction: column; 
+            flex-direction: column;
         }
 
         &__radio-block {
@@ -99,11 +98,17 @@
         &__item {
 
             &-img {
-                max-width: 130px;
+
+                &_theme {
+                    max-width: 130px;
+                }
+                
             }
+
             &-body {
-                padding: 9px 5px 3px 11px;
+                align-self: center;
                 max-width: 270px;
+                padding: 9px 5px 3px 11px;
             }
 
             &-date {
@@ -119,19 +124,13 @@
                 font-size: 19px;
             }
 
-            &-date ,&-duration, &-players {
+            &-date, &-duration, &-players {
                 font-size: 16px;
 
                 span {
                     font-size: 12px;
                 }
             }
-        }
-    }
-
-    input#sign-nickname, input#theme-nickname, input#reviews-nickname {
-        &::placeholder {
-            font-size: 17px;
         }
     }
 
@@ -156,7 +155,6 @@
 
 @media (max-width: 425px) {
     .feed-form {
-
         &__label {
             margin-top: 25px;
             font-size: 20px;
@@ -168,10 +166,18 @@
             padding-left: 11px;
             height: 55px;
             font-size: 16px;
+
+            &_pt5 {
+                padding-right: 20px;
+
+                &::placeholder {
+                    font-size: 16px;
+                }
+            }
         }
 
         &__radio-wrapper {
-            flex-direction: column; 
+            flex-direction: column;
         }
 
         &__radio-block {
@@ -189,14 +195,13 @@
         }
 
         &__item {
-
             &-img {
                 max-width: 152px;
             }
 
             &-body {
-                padding: 9px 5px 3px 9px;
                 max-width: unset;
+                padding: 9px 5px 3px 9px;
             }
 
             &-date {
@@ -214,18 +219,13 @@
                 font-size: 19px;
             }
 
-            &-date ,&-duration, &-players {
+            &-date, &-duration, &-players {
                 font-size: 16px;
 
                 span {
                     font-size: 12px;
                 }
             }
-        }
-    }
-    input#sign-nickname, input#theme-nickname, input#reviews-nickname {
-        &::placeholder {
-            font-size: 14px;
         }
     }
 
@@ -235,6 +235,7 @@
 
     input#sign-date {
         width: 100%;
+        font-size: 30px;  
     }
 
     input#instruction-social {
@@ -248,13 +249,18 @@
 
 @media (width < 375px) {
     .feed-form {
-
         &__label {
-            font-size: 18px;
+            font-size: 16px;
+        }
+
+        &__input {
+
+            &_pt5 {
+                padding-right: 10px;
+            }
         }
 
         &__item {
-
             &-descr {
                 display: flex;
                 flex-direction: column;
@@ -262,10 +268,10 @@
             }
 
             &-title {
-                font-size: 20px;
+                font-size: 18px;
             }
 
-            &-date ,&-duration, &-players {
+            &-date, &-duration, &-players {
                 font-size: 16px;
 
                 span {
@@ -283,5 +289,24 @@
         }
     }
 
-    
+    #datepicker {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 375px) {
+    .feed-form {
+
+        &__item {
+
+            &-img {
+                max-width: 100px;
+                max-height: 110px;
+            }
+        }
+    }
+
+    label#social-error {
+        font-size: 16px;
+    }  
 }

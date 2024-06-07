@@ -1,10 +1,11 @@
 .footer {
-    padding: 142px 0 0 0;
+    padding: 142px 0 0;
 
     &__title {
         font-size: 68px;
-        line-height: 0.9;    
+        line-height: 0.9;
     }
+
     &__subtitle {
         font-size: 24px;
         line-height: 1.6;
@@ -91,7 +92,6 @@
     }
 
     &__social {
-
         &-link {
             margin-right: 25px;
             text-decoration: none;

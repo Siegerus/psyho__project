@@ -87,20 +87,41 @@ $(document).ready(function(){
 
     $('.feed-form__radio').on('click', function(){
         let input = $('#sign-nickname, #reviews-nickname, #theme-nickname');
-        let currentPlaсeholder = input.attr('placeholder');
+        /* let currentPlaсeholder = input.attr('placeholder'); */
         let text = $('input.feed-form__radio_social:checked + .feed-form__radio-label').text();
         input.attr('placeholder', 'Как вас найти в ' + text + ' (введите ваш ник или номер телефона)');  
         $('.modal__close').on('click', function(){
-            input.attr('placeholder', currentPlaсeholder);
+            input.attr('placeholder', 'Как вас найти в  (введите ваш ник или номер телефона)');
         })
     });
-    
 
+    /* $('.feed-form__radio').on('click' , function(){
+        let text = $('input.feed-form__radio_social:checked + .feed-form__radio-label').text();
+        $('.feed-form__multistringDiv').text(('Как вас найти в ' + text +' (введите ваш ник или номер телефона)'));
+        $('.modal__close').on('click', function(){
+            $('.feed-form__multistringDiv').text(('Как вас найти в  (введите ваш ник или номер телефона)'));
+        })
+    }) */
+
+    $('.feed-form__input_multistring').on('input', function() {
+        if ($('.feed-form__input_multistring').val()) {
+            $('.feed-form__multistringDiv').fadeOut();
+        } else {
+            $('.feed-form__multistringDiv').fadeIn();
+        }
+    })
 
     $('#theme-form').validate({
         errorPlacement: function(error, element) {
             if (element.hasClass('theme-radio')) {
-                error.appendTo('.feed-form__error-box');
+                error.appendTo('.feed-form__error-box_radio-theme');
+            } else {
+                error.insertAfter(element);
+              }     
+        },
+        errorPlacement: function(error, element) {
+            if (element.hasClass('feed-form__radio feed-form__radio_social')) {
+                error.appendTo('.feed-form__theme-social-error');
             } else {
                 error.insertAfter(element);
               }
@@ -115,7 +136,7 @@ $(document).ready(function(){
                 rangelength: [2, 30]
             },
             social: {
-                required: false       
+                required: true       
             },
             nickname: {
                 rangelength: [3, 30] 
@@ -134,6 +155,9 @@ $(document).ready(function(){
                 required: "Пожалуйста, введите своё имя",
                 rangelength: "Введите от {2} до {30} символов"
             },
+            social: {
+                required: "Пожалуйста, укажите социальную сеть для связи"
+            }, 
             nickname:{
                 required:"Пожалуйста, укажите ник или номер телефона",
                 rangelength: "Введите от {2} до {30} символов"
@@ -152,7 +176,7 @@ $(document).ready(function(){
     $('#instructions-form').validate({
             errorPlacement: function(error, element) {
                 if (element.hasClass('instructions-radio')) {
-                    error.appendTo('.feed-form__error-box');
+                    error.appendTo('.feed-form__error-box_radio-instruction');
                 } else {
                     error.insertAfter(element);
                   }
@@ -185,7 +209,7 @@ $(document).ready(function(){
                     rangelength: "Введите от {2} до {30} символов"
                 },
                 social:{
-                    required:"Пожалуйста, укажите соц. сеть для связи",
+                    required:"Пожалуйста, укажите социальную сеть для связи",
                     rangelength: "Введите от {2} до {10} символов"
                 },
                 email: {
@@ -198,8 +222,8 @@ $(document).ready(function(){
         $('#reviews-form').validate({
             errorPlacement: function(error, element) {
                 if (element.hasClass('feed-form__radio')) {
-                    error.appendTo('.feed-form__error-box');
-                    error.css('margin-bottom', '40px');
+                    error.appendTo('.feed-form__error-box_denied');
+                    /* error.css('margin-bottom', '40px'); */
                 } else {
                     error.insertAfter(element);
                   }
@@ -335,18 +359,9 @@ $(document).ready(function(){
             return false;        
          });     
    
-
-
-
-
-
-
-
-
-
+    });
 
     
-    });
 
     
     

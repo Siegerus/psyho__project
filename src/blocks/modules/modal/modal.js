@@ -16,10 +16,13 @@ $(document).ready(function(){
         firstDay: 1,
         isRTL: false,
         showMonthAfterYear: false,
-        yearSuffix: '',
-        
+        yearSuffix: ''  
     };
     $.datepicker.setDefaults($.datepicker.regional['ru']);
+
+    $.datepicker.setDefaults({
+        showOtherMonths: true
+    })
 
     $("#datepicker").datepicker({
         onSelect: function(date) {
@@ -28,6 +31,10 @@ $(document).ready(function(){
     });
     
     $("#datepicker").datepicker("setDate", $('#sign-date').val());
+
+    $('#sign-time').datepicker({
+
+    })
     
 
     function closeModal(item) {
@@ -48,7 +55,13 @@ $(document).ready(function(){
     $('.button_succes').on('click', function(e) {
         e.preventDefault();
     }); 
-   
+
+    $('.overlay').click(function (e) {
+        if ($(e.target).is('.modal__wrapper, .overlay')) {
+            $('.modal__wrapper, .modal, .overlay').fadeOut('slow');
+            $('body').removeClass('modal-open');
+        }
+    }); 
 
 });
 

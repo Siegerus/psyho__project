@@ -4,8 +4,9 @@
     }
 
     body.modal-open {
-        padding-right:0;  
+        padding-right: 0;
     }
+
     .promo {
         &__photo {
             width: 540px;
@@ -22,15 +23,17 @@
         }
     }
 }
+
 @media (max-width: 1200px) {
     .container {
         max-width: 968px;
         padding-left: 0;
-    }    
+    }
+
     .promo {
         &__photo {
-            width: 539px;
             z-index: -1;
+            width: 539px;
         }
 
         &__app {
@@ -39,6 +42,7 @@
         }
     }
 }
+
 @media (max-width: 992px) {
     .container {
         max-width: 695px;
@@ -46,7 +50,7 @@
 
     .promo {
         &__wrapper-l-visible {
-            position: relative;;
+            position: relative;
         }
 
         &__title {
@@ -60,10 +64,9 @@
 
         &__descr {
             font-size: 15px;
-            
         }
+
         &__photo {
-        
             &_m-hidden {
                 display: none;
             }
@@ -76,8 +79,8 @@
 
         &__app {
             top: 215px;
-            left: auto;
             right: 0;
+            left: auto;
             width: 236px;
             height: 389px;
             transform: none;
@@ -86,14 +89,14 @@
         &__item {
             display: flex;
             position: relative;
-            margin: 169px auto 0 auto;
             width: 475px;
+            margin: 169px auto 0;
         }
-    
+
         &__img {
             min-width: 180px;
         }
-    
+
         &__poem {
             padding: 10px 0 18px 19px;
             margin-top: 0;
@@ -106,14 +109,13 @@
         }
     }
 }
-@media (max-width: 767px) {                     
-                                                     
+
+@media (max-width: 767px) {
     .container {
         max-width: 540px;
     }
 
     .promo {
-
         &__title {
             margin-top: 80px;
             font-size: 42px;
@@ -123,11 +125,11 @@
             font-size: 26px;
         }
 
-        &__descr { 
+        &__descr {
             max-width: 405px;
             font-size: 21px;
             line-height: 98%;
-            
+
             &-wrap {
                 max-width: 426px;
                 background-color: rgba(238 237 238 / 50%);
@@ -136,10 +138,10 @@
             br {
                 display: none;
             }
-        
         }
-        &__photo { 
-            width: 400px; 
+
+        &__photo {
+            width: 400px;
         }
 
         &__diploma {
@@ -155,17 +157,16 @@
         &__item {
             display: flex;
             position: relative;
-            margin: 100px auto 0 auto;
             width: 100%;
+            margin: 100px auto 0;
         }
-    
+
         &__poem {
             padding: 0 0 0 14px;
             margin-top: 0;
             font-size: 18px;
-            
         }
-    }   
+    }
 }
 
 @media (max-width: 576px) {
@@ -173,8 +174,8 @@
         max-width: 100%;
         padding: 0 15px;
     }
-    .promo {
 
+    .promo {
         &__diploma {
             width: 310px;
         }
@@ -200,7 +201,7 @@
             font-size: 17px;
 
             &-wrap {
-                max-width: 300px;
+                max-width: 315px;
                 padding-top: 15px;
             }
         }
@@ -210,10 +211,11 @@
         }
 
         &__poem {
-            font-size: 13px;
-            max-width: 245px;
             min-width: 225px;
+            max-width: 245px;
+            font-size: 13px;
         }
+
         &__img {
             min-width: 135px;
             max-height: 135px;
@@ -270,7 +272,7 @@
 
         &__item {
             margin-top: 50px;
-            padding: 0 5px 0 5px;
+            padding: 0 5px;
         }
 
         &__img {
@@ -279,10 +281,9 @@
         }
 
         &__poem {
-            font-size: 10px;
-            max-width: unset;
             min-width: unset;
+            max-width: unset;
+            font-size: 10px;
         }
- 
     }
 }

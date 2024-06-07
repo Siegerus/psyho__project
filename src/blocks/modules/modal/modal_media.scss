@@ -2,12 +2,13 @@
     .container {
         max-width: 1200px;
     }
-
 }
+
 @media (max-width: 1200px) {
     .container {
         max-width: 968px;
     }
+
     .modal {
         &__title {
             font-size: 45px;
@@ -15,29 +16,30 @@
         }
     }
 }
+
 @media (max-width: 992px) {
     .container {
         max-width: 695px;
     }
+
     .modal {
         &__close {
-
             &:hover {
                 border-radius: none;
-                box-shadow: none; 
+                box-shadow: none;
                 background-color: $main-color;
             }
         }
     }
 }
 
-@media (max-width: 767px) {                                                                       
+@media (max-width: 767px) {
     .container {
         max-width: 540px;
     }
 }
 
-@media (max-width: 600px) {                                                                       
+@media (max-width: 600px) {
     .container {
         max-width: 540px;
     }
@@ -46,18 +48,17 @@
         max-width: 540px;
 
         &__wrapper {
-            max-width: 540px; 
+            max-width: 540px;
         }
 
         &__title {
-
             span {
+                display: block;
                 font-size: 23px;
             }
         }
 
         &__subtitle {
-
             br {
                 display: none;
             }
@@ -74,7 +75,7 @@
         max-width: 480px;
 
         &__wrapper {
-            max-width: 480px; 
+            max-width: 480px;
         }
     }
 }
@@ -86,10 +87,10 @@
     }
 
     .modal {
-        padding: 105px 33px 30px 33px;
         width: 100%;
+        padding: 105px 33px 30px;
 
-        &_instructions-succes, &_theme-succes, &_sign-succes, &_reviews-succes  {
+        &_instructions-succes, &_theme-succes, &_sign-succes, &_reviews-succes {
             padding-top: 110px;
             padding-bottom: 55px;
 
@@ -118,7 +119,7 @@
             max-width: 320px;
             font-size: 18px;
         }
-        
+
         &__succes-descr {
             margin-top: 27px;
             font-size: 19px;
@@ -129,25 +130,24 @@
             margin-top: 25px;
         }
 
-        &__subtitle { 
+        &__subtitle {
             margin-top: 20px;
             font-size: 22px;
             max-width: 400px;
 
             br {
                 display: block;
-            }    
+            }
         }
     }
 }
 
 @media (max-width: 425px) {
     .modal {
-        padding: 90px 33px 45px 33px;
         width: 100%;
+        padding: 90px 33px 45px;
 
-        &_instructions-succes, &_theme-succes, &_sign-succes, &_reviews-succes  {
-
+        &_instructions-succes, &_theme-succes, &_sign-succes, &_reviews-succes {
             .modal__title {
                 margin-top: 35px;
                 font-size: 30px;
@@ -175,7 +175,7 @@
 
         &__subtitle {
             margin-top: 20px;
-            font-size: 19px;  
+            font-size: 19px;
 
             br {
                 display: none;
@@ -186,10 +186,20 @@
             margin-top: 13px;
             font-size: 15px;
             max-width: 265px;
-        }  
+        }
 
         &__succes-link {
             font-size: 18px;
+        }
+    }
+
+    @media (max-width: 375px) {
+
+        .modal {
+
+            &__close {
+                top: 8px;  
+            }
         }
     }
 }
