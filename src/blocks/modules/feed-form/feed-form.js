@@ -56,11 +56,14 @@ $(document).ready(function(){
             }
     });
 
-    $('#sign-time, #sign-date').on('input', function(){
+    /* $('#sign-time, #sign-date').on('input', function(){
         this.value = this.value.replace(/[^0-9\.\,\:\ ]/g, '');
-    });
-    $('#sign-time').mask("9?9 : 99", {placeholder: "_"});
+    }); */
+    /* $('#sign-time').mask("9?9 : 99", {placeholder: "_"}); */
+    /* $('#sign-date').mask("99-99-99", {placeholder: ""}); */
     
+    document.getElementById('sign-date').readOnly = true;
+    document.getElementById('sign-time').readOnly = true;
     
     $('input[name=phone]').on('input', function(){  
         this.value = this.value.replace(/[^0-9\+]/g, '');
@@ -87,7 +90,6 @@ $(document).ready(function(){
 
     $('.feed-form__radio').on('click', function(){
         let input = $('#sign-nickname, #reviews-nickname, #theme-nickname');
-        /* let currentPlaсeholder = input.attr('placeholder'); */
         let text = $('input.feed-form__radio_social:checked + .feed-form__radio-label').text();
         input.attr('placeholder', 'Как вас найти в ' + text + ' (введите ваш ник или номер телефона)');  
         $('.modal__close').on('click', function(){
@@ -117,13 +119,10 @@ $(document).ready(function(){
                 error.appendTo('.feed-form__error-box_radio-theme');
             } else {
                 error.insertAfter(element);
+                if (element.hasClass('feed-form__radio_social')) {
+                    error.appendTo('.feed-form__error-box_radio-social');
+                }
               } 
-              
-              if (element.hasClass('feed-form__radio_social')) {
-                error.appendTo('.feed-form__theme-social-error');
-            } else {
-                error.insertAfter(element);
-              }
         },
         ignore: "",
         rules: {
@@ -299,13 +298,25 @@ $(document).ready(function(){
         }
         $.ajax({
             type: "POST",
-            url: "mailer/sign-form.php",
+            url: "mailer/sign-form.php", 
+            async: true,
+            data: $(this).serialize()}).done(function() {
+                $(this).find("input").val("");
+                $('.modal_sign-succes').fadeIn('slow');
+                $('form').trigger('reset'); 
+            })
+
+        $.ajax({
+            type: "POST",
+            url: "telegram/sign-form_telegram.php", 
+            async: true,
             data: $(this).serialize()}).done(function() {
                 $(this).find("input").val("");
                 $('.modal_sign-succes').fadeIn('slow');
                 $('form').trigger('reset');
             })
-            return false;        
+            
+            return false;    
         });
 
     $('#theme-form').submit(function(e) {
@@ -316,13 +327,26 @@ $(document).ready(function(){
         $.ajax({
             type: "POST",
             url: "mailer/theme-form.php",
+            async: true,
             data: $(this).serialize()}).done(function() {
                 $('.modal_theme-succes .feed-form__radio-block').html($('.modal_theme input.theme-radio:checked + .feed-form__radio-block').html());
                 $(this).find("input").val("");
                 $('.modal_theme-succes').fadeIn('slow');
                 $('form').trigger('reset');
             })
-            return false;        
+          
+        $.ajax({
+            type: "POST",
+            url: "telegram/theme-form_telegram.php",
+            async: true,
+            data: $(this).serialize()}).done(function() {
+                $('.modal_theme-succes .feed-form__radio-block').html($('.modal_theme input.theme-radio:checked + .feed-form__radio-block').html());
+                $(this).find("input").val("");
+                $('.modal_theme-succes').fadeIn('slow');
+                $('form').trigger('reset');
+            })
+
+            return false;     
         });
 
     $('#instructions-form').submit(function(e) {
@@ -333,13 +357,26 @@ $(document).ready(function(){
         $.ajax({
             type: "POST",
             url: "mailer/instructions-form.php",
+            async: true,
             data: $(this).serialize()}).done(function() {
                 $('.modal_instructions-succes .feed-form__radio-block').html($('.modal_instructions input.instructions-radio:checked + .feed-form__radio-block').html());
                 $(this).find("input").val("");
                 $('.modal_instructions-succes').fadeIn('slow');
                 $('form').trigger('reset');
             })
-            return false;        
+
+        $.ajax({
+            type: "POST",
+            url: "telegram/instructions-form_telegram.php",
+            async: true,
+            data: $(this).serialize()}).done(function() {
+                $('.modal_instructions-succes .feed-form__radio-block').html($('.modal_instructions input.instructions-radio:checked + .feed-form__radio-block').html());
+                $(this).find("input").val("");
+                $('.modal_instructions-succes').fadeIn('slow');
+                $('form').trigger('reset');
+            })
+
+            return false;     
         });
 
     $('#reviews-form').submit(function(e) {
@@ -350,12 +387,24 @@ $(document).ready(function(){
         $.ajax({
             type: "POST",
             url: "mailer/reviews-form.php",
+            async: true,
             data: $(this).serialize()}).done(function() {
                 $(this).find("input").val("");
                 $('.modal_reviews-succes').fadeIn('slow')
                 $('form').trigger('reset');
             })
-            return false;        
+            
+        $.ajax({
+            type: "POST",
+            url: "telegram/reviews-form_telegram.php",
+            async: true,
+            data: $(this).serialize()}).done(function() {
+                $(this).find("input").val("");
+                $('.modal_reviews-succes').fadeIn('slow')
+                $('form').trigger('reset');
+            })
+
+            return false;     
          });     
    
     });

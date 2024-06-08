@@ -21,7 +21,8 @@ $(document).ready(function(){
     $.datepicker.setDefaults($.datepicker.regional['ru']);
 
     $.datepicker.setDefaults({
-        showOtherMonths: true
+        showOtherMonths: true,
+        minDate:"+0d"
     })
 
     $("#datepicker").datepicker({
@@ -31,10 +32,21 @@ $(document).ready(function(){
     });
     
     $("#datepicker").datepicker("setDate", $('#sign-date').val());
+    /* $( "#datepicker" ).datepicker( "option", "constrainInput", true); */
 
-    $('#sign-time').datepicker({
 
-    })
+
+    $('#sign-time').timepicker({
+        timeFormat: 'HH:mm',
+        interval: 30,
+        minHour: '8',
+        maxHour: '20',
+        defaultTime: '',
+        startTime: '',
+        dynamic: false,
+        dropdown: true,
+        scrollbar: true
+    });
     
 
     function closeModal(item) {
@@ -42,7 +54,6 @@ $(document).ready(function(){
             $('.modal, .overlay').fadeOut('slow');
             $('body').removeClass('modal-open');
             $('.aside__menu').removeClass('aside__menu_active');
-            /* $('#sign-nickname, #reviews-nickname, #theme-nickname, #instructions-nickname').attr('placeholder', 'Как вас найти в (введите ваш ник или номер телефона)'); */
             $('form').trigger('reset');
             $('label.error').css('display', 'none');
             

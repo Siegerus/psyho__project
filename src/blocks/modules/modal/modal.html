@@ -10,7 +10,7 @@
                 <label class="feed-form__label" for="sign-user">Ваше имя:</label>
                 <input id="sign-user" name="user" type="text" class="feed-form__input" placeholder="Введите Ваше имя">
                 <label class="feed-form__label feed-form__label_phone" for="sign-phone">НОмер телефона:</label>
-                <input id="sign-phone" name="phone"  type="text" class="feed-form__input" placeholder="Введите номер">
+                <input id="sign-phone" name="phone"  type="text" class="feed-form__input" placeholder="Введите номер" autocomplete="on">
                 <div class="feed-form__massager">
                     <div class="feed-form__label">Выберите месседжер для связи:</div>
                         <div class="feed-form__radio-wrapper">
@@ -32,16 +32,12 @@
                             </div>  
                         </div>
                 </div>
-                <!-- <div class="feed-form__multistring-wrap"> -->
                     <input id="sign-nickname" name="nickname" class="feed-form__input feed-form__input_pt5 feed-form__input_multistring" placeholder="Как вас найти в (введите ваш ник или номер телефона)" type="text">
-                    <!-- <div class="feed-form__multistringDiv">"Как вас найти в (введите ваш ник или номер телефона)"</div> -->
-                <!-- </div> -->
                 <label for="sign-date" class="feed-form__label">Укажите желаемую дату консультации:</label>
                     <input type="text" name="date" class="feed-form__input feed-form__input_date" id="sign-date">
                     <div id="datepicker"></div>
                 <label for="sign-time" class="feed-form__label">Укажите удобное для вас время:</label>
                 <input type="text" name="time" class="feed-form__input" id="sign-time" placeholder="Например: 14:30">
-                
 
                 <button id="modal-sign-button" class="button button_mt40">ОТправить заявку</button>
             </form>
@@ -75,7 +71,7 @@
             <label class="feed-form__label" for="reviews-user">Ваше имя:</label>
                 <input id="reviews-user" name="user" type="text" class="feed-form__input" placeholder="Введите Ваше имя">
                 <label class="feed-form__label feed-form__label_phone" for="reviews-phone">НОмер телефона:</label>
-                <input id="reviews-phone" name="phone" type="text" class="feed-form__input" placeholder="Введите номер">
+                <input id="reviews-phone" name="phone" type="text" class="feed-form__input" placeholder="Введите номер" autocomplete="on">
                 <div class="feed-form__massager">
                     <div class="feed-form__label">Выберите месседжер для связи:</div>
                     <div class="feed-form__radio-wrapper">
@@ -181,7 +177,7 @@
                             </span>
                         </span>
                     </span>
-                    <span class="feed-form__item-img feed-form__item-img_theme"><img src="img/modal/perception.png" alt="theme"></span>
+                    <span class="feed-form__item-img feed-form__item-img_theme"><img src="img/modal/theme.png" alt="theme"></span>
                 </span>
             </label>
             <label class="feed-form__label" for="theme-user">Ваше имя:</label>
@@ -209,9 +205,9 @@
             </div>
             </div>
             <input id="theme-nickname" name="nickname" class="feed-form__input feed-form__input_pt5" type="text" placeholder="Как вас найти в (введите ваш ник или номер телефона)">
-            <div class="feed-form__theme-social-error"></div>
+            <div class="feed-form__error-box feed-form__error-box_radio-social"></div>
             <label class="feed-form__label" for="theme-email">Ваш email:</label>
-            <input id="theme-email" name="email" type="email" class="feed-form__input" placeholder="Введите Ваш email">
+            <input id="theme-email" name="email" type="email" class="feed-form__input" placeholder="Введите Ваш email" autocomplete="on">
 
             <button id="modal-theme-button" class="button button_mt75">забронировать место</button>
         </form> 
@@ -298,7 +294,7 @@
                     <label for="instruction-social" class="feed-form__label">Любой месседжер для связи:</label>
                     <input class="feed-form__input feed-form__input_social" type="text" name="social" id="instruction-social" placeholder="Telegram  /  Instagram  /  WhatsApp  /  Viber"> 
                 <label class="feed-form__label" for="instructions-email">Ваш email:</label>
-                <input id="instructions-email" name="email" type="email" class="feed-form__input" placeholder="Введите Ваш email">
+                <input id="instructions-email" name="email" type="email" class="feed-form__input" placeholder="Введите Ваш email" autocomplete="on">
 
                 <button id="modal-instructions-button" class="button button_mt75">Купить инструкцию</button>
             </form> 

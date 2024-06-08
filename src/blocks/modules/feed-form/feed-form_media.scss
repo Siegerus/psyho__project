@@ -301,7 +301,6 @@
 
             &-img {
                 max-width: 100px;
-                max-height: 110px;
             }
         }
     }
@@ -309,4 +308,20 @@
     label#social-error {
         font-size: 16px;
     }  
+}
+
+@media (max-width: 335px) {
+    .feed-form {
+
+        &__input {
+
+            &_pt5 {
+                padding-right: 10px;
+
+                &:placeholder-shown {
+                    font-size: 22;
+                }
+            }
+        }
+    }
 }
