@@ -103,13 +103,13 @@ $(document).ready(function(){
         })
     }) */
 
-    $('.feed-form__input_multistring').on('input', function() {
+    /* $('.feed-form__input_multistring').on('input', function() {
         if ($('.feed-form__input_multistring').val()) {
             $('.feed-form__multistringDiv').fadeOut();
         } else {
             $('.feed-form__multistringDiv').fadeIn();
         }
-    })
+    }) */
 
     $('#theme-form').validate({
         errorPlacement: function(error, element) {
@@ -117,10 +117,9 @@ $(document).ready(function(){
                 error.appendTo('.feed-form__error-box_radio-theme');
             } else {
                 error.insertAfter(element);
-              }     
-        },
-        errorPlacement: function(error, element) {
-            if (element.hasClass('feed-form__radio feed-form__radio_social')) {
+              } 
+              
+              if (element.hasClass('feed-form__radio_social')) {
                 error.appendTo('.feed-form__theme-social-error');
             } else {
                 error.insertAfter(element);
