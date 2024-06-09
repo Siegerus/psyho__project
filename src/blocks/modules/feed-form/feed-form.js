@@ -26,7 +26,8 @@ $(document).ready(function(){
                 rangelength: [3, 30] 
             },
             date: {
-                required: true
+                required: true,
+                justdate: true
             },
             time: {
                 required: true,
@@ -39,7 +40,6 @@ $(document).ready(function(){
             },
             phone: {
                 required:"Пожалуйста, введите свой номер",
-                /* justphone: "Неверный формат", */
                 rangelength: "От 10 до 13 символов, взависимости от формата"
             }, 
             nickname:{
@@ -47,7 +47,8 @@ $(document).ready(function(){
                 rangelength: "Введите от {2} до {30} символов"
             },
             date: {
-                required:"Пожалуйста, укажите желаемую дату"
+                required:"Пожалуйста, укажите желаемую дату",
+                justdate: "Укажите корректную дату"
                 
             },
             time: {
@@ -56,14 +57,39 @@ $(document).ready(function(){
             }
     });
 
-    /* $('#sign-time, #sign-date').on('input', function(){
-        this.value = this.value.replace(/[^0-9\.\,\:\ ]/g, '');
+    $.validator.addMethod("justdate", function(value, element) {
+        return this.optional( element ) || /^(?:(?:31(\/|-|\.)(?:0?[13578]|1[02]))\1|(?:(?:29|30)(\/|-|\.)(?:0?[13-9]|1[0-2])\2))(?:(?:1[6-9]|[2-9]\d)?\d{2})$|^(?:29(\/|-|\.)0?2\3(?:(?:(?:1[6-9]|[2-9]\d)?(?:0[48]|[2468][048]|[13579][26])|(?:(?:16|[2468][048]|[3579][26])00))))$|^(?:0?[1-9]|1\d|2[0-8])(\/|-|\.)(?:(?:0?[1-9])|(?:1[0-2]))\4(?:(?:1[6-9]|[2-9]\d)?\d{2})$/.test( value );
+        });
+
+
+    /* $('#sign-date').on('input', function(){
+        this.value = this.value.replace(/[^0-9\+\-\:\.]/g, '');
     }); */
-    /* $('#sign-time').mask("9?9 : 99", {placeholder: "_"}); */
-    /* $('#sign-date').mask("99-99-99", {placeholder: ""}); */
+
     
-    document.getElementById('sign-date').readOnly = true;
-    document.getElementById('sign-time').readOnly = true;
+    $.mask.definitions['d'] = "[0-1]";
+    $.mask.definitions['H'] = "[0-2]";
+    $.mask.definitions['h'] = "[0-9]";
+    $.mask.definitions['M'] = "[0-5]";
+    $.mask.definitions['m'] = "[0-9]";
+
+    $("#sign-time").mask("Hh:Mm", {
+        placeholder: "",
+        completed: function() {
+            let currentMask = $(this).mask();
+            if (isNaN(parseInt(currentMask))) {
+                $(this).val("");
+            } else if (parseInt(currentMask) > 2359) {
+                $(this).val("23:59");
+            };
+        }}
+    ); 
+
+    $("#sign-date").mask("99-99-2024", {placeholder: ""});
+
+    
+    
+    /* document.getElementById('sign-date').readOnly = true; */
     
     $('input[name=phone]').on('input', function(){  
         this.value = this.value.replace(/[^0-9\+]/g, '');
@@ -97,21 +123,6 @@ $(document).ready(function(){
         })
     });
 
-    /* $('.feed-form__radio').on('click' , function(){
-        let text = $('input.feed-form__radio_social:checked + .feed-form__radio-label').text();
-        $('.feed-form__multistringDiv').text(('Как вас найти в ' + text +' (введите ваш ник или номер телефона)'));
-        $('.modal__close').on('click', function(){
-            $('.feed-form__multistringDiv').text(('Как вас найти в  (введите ваш ник или номер телефона)'));
-        })
-    }) */
-
-    /* $('.feed-form__input_multistring').on('input', function() {
-        if ($('.feed-form__input_multistring').val()) {
-            $('.feed-form__multistringDiv').fadeOut();
-        } else {
-            $('.feed-form__multistringDiv').fadeIn();
-        }
-    }) */
 
     $('#theme-form').validate({
         errorPlacement: function(error, element) {

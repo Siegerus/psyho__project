@@ -16,14 +16,12 @@ $(document).ready(function(){
         firstDay: 1,
         isRTL: false,
         showMonthAfterYear: false,
-        yearSuffix: ''  
+        yearSuffix: '',
+        showOtherMonths: true,
+        minDate:"+0d",
+        maxDate:"+3m"  
     };
     $.datepicker.setDefaults($.datepicker.regional['ru']);
-
-    $.datepicker.setDefaults({
-        showOtherMonths: true,
-        minDate:"+0d"
-    })
 
     $("#datepicker").datepicker({
         onSelect: function(date) {
@@ -32,11 +30,9 @@ $(document).ready(function(){
     });
     
     $("#datepicker").datepicker("setDate", $('#sign-date').val());
-    /* $( "#datepicker" ).datepicker( "option", "constrainInput", true); */
+    
 
-
-
-    $('#sign-time').timepicker({
+    /* $('#sign-time').timepicker({
         timeFormat: 'HH:mm',
         interval: 30,
         minHour: '8',
@@ -46,7 +42,7 @@ $(document).ready(function(){
         dynamic: false,
         dropdown: true,
         scrollbar: true
-    });
+    }); */
     
 
     function closeModal(item) {
