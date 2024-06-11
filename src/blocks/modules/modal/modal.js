@@ -32,7 +32,7 @@ $(document).ready(function(){
     $("#datepicker").datepicker("setDate", $('#sign-date').val());
     
 
-    /* $('#sign-time').timepicker({
+    $('#sign-time').timepicker({
         timeFormat: 'HH:mm',
         interval: 30,
         minHour: '8',
@@ -41,8 +41,8 @@ $(document).ready(function(){
         startTime: '',
         dynamic: false,
         dropdown: true,
-        scrollbar: true
-    }); */
+        scrollbar: false
+    });
     
 
     function closeModal(item) {

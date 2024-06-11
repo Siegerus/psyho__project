@@ -52,6 +52,7 @@
 
         img {
             width: 100%;
+            height: 100%;
             object-fit: cover;
         }
     }
@@ -95,23 +96,17 @@
         font-size: 16px;
         line-height: 160%;
         width: 107px;
-
-        /* &:before {
-            content: '' ;
-            background: url('../../icons/promo_arrow.svg') center (center / cover) no-repeat;
-            position: absolute;
-            display: block;
-            z-index: 10;
-            width: 20px;
-            height: 164px;
-            bottom: -23px;
-            left: -23px;
-        } */
     }
 
     &__arrow {
         position: absolute;
         bottom: -23px;
         left: -28px;
+
+        img {
+            width: 21px;
+            height: 164px;
+            object-fit: cover;
+        }
     }
 }

@@ -7,6 +7,8 @@ $(document).ready(function(){
         let id  = $(this).attr('href');
         let top = $(id).offset().top; 
         $(root).animate({scrollTop: top}, 400); 
-    }); 
-
+    });
 });
+
+
+

@@ -70,9 +70,11 @@
 
     &__person {
         margin-right: 50px;
-        max-width: 120px;
-        max-height: 120px;
+        width: 120px;
+        height: 120px;
         object-fit: cover;
+
+        
 
         &_m-visible {
             display: none;
@@ -95,6 +97,8 @@
 
     &__mark {
         margin-right: 30px;
+        width: 51px;
+        height: 51px;
     }
 
     &__comment {

@@ -66,8 +66,6 @@ $(document).ready(function(){
         this.value = this.value.replace(/[^0-9\+\-\:\.]/g, '');
     }); */
 
-    
-    $.mask.definitions['d'] = "[0-1]";
     $.mask.definitions['H'] = "[0-2]";
     $.mask.definitions['h'] = "[0-9]";
     $.mask.definitions['M'] = "[0-5]";
@@ -85,9 +83,10 @@ $(document).ready(function(){
         }}
     ); 
 
-    $("#sign-date").mask("99-99-2024", {placeholder: ""});
+    /* $("#sign-date").mask("99-99-9999", {
+        placeholder: "",
+    }); */
 
-    
     
     /* document.getElementById('sign-date').readOnly = true; */
     

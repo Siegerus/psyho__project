@@ -5,9 +5,6 @@ $(document).ready(function(){
         $('.overlay, .modal_reviews, .modal__wrapper').fadeIn('slow')
         $('body').addClass('modal-open')
     });
-    /* $('#modal-reviews-button').on('click', function() {
-        $('.modal_reviews-succes').fadeIn('slow')
-    }); */
 
     $(".reviews__arrow-prev, .reviews__arrow-next").click(function() {
         let $reviews = $(".reviews__wrapper .reviews__content");
