@@ -8,6 +8,9 @@ $(document).ready(function(){
                 error.css('text-align', 'center');
             } else {
                 error.insertAfter(element);
+                if (element.hasClass('feed-form__checkbox')) {
+                    error.appendTo('.feed-form__error-box_policy_sign');
+                }
               }
         },
         rules: {
@@ -31,6 +34,9 @@ $(document).ready(function(){
             },
             time: {
                 required: true,
+            },
+            policy: {
+                required: true,
             }
             },
         messages: {      
@@ -53,7 +59,8 @@ $(document).ready(function(){
             },
             time: {
                 required:"Пожалуйста, укажите время"
-            }
+            },
+            policy: "Согласитесь с политикой конфиденциальности" 
             }
     });
 
@@ -132,6 +139,9 @@ $(document).ready(function(){
                 if (element.hasClass('feed-form__radio_social')) {
                     error.appendTo('.feed-form__error-box_radio-social');
                 }
+                if (element.hasClass('feed-form__checkbox')) {
+                    error.appendTo('.feed-form__error-box_policy_theme');
+                }
               } 
         },
         ignore: "",
@@ -153,6 +163,9 @@ $(document).ready(function(){
                 required: true,
                 justmail: true,
                 email: false
+            },
+            policy: {
+                required: true,
             }
         },
         messages: {
@@ -173,7 +186,8 @@ $(document).ready(function(){
             email: {
                 required: "Пожалуйста, введите свою почту",
                 justmail: "Неправильный адрес почты"
-            }
+            },
+            policy: "Согласитесь с политикой конфиденциальности" 
         } 
     });
 
@@ -187,6 +201,9 @@ $(document).ready(function(){
                     error.appendTo('.feed-form__error-box_radio-instruction');
                 } else {
                     error.insertAfter(element);
+                    if (element.hasClass('feed-form__checkbox')) {
+                        error.appendTo('.feed-form__error-box_policy_instruction');
+                    }
                   }
             },
             ignore: "",
@@ -206,6 +223,9 @@ $(document).ready(function(){
                     required: true,
                     justmail: true,
                     email: false
+                },
+                policy: {
+                    required: true,
                 }
             },
             messages: {
@@ -223,7 +243,8 @@ $(document).ready(function(){
                 email: {
                     required: "Пожалуйста, введите свою почту",
                     justmail: "Неправильный адрес почты"
-                }
+                },
+                policy: "Согласитесь с политикой конфиденциальности" 
             } 
         });
 
@@ -231,9 +252,11 @@ $(document).ready(function(){
             errorPlacement: function(error, element) {
                 if (element.hasClass('feed-form__radio')) {
                     error.appendTo('.feed-form__error-box_denied');
-                    /* error.css('margin-bottom', '40px'); */
                 } else {
                     error.insertAfter(element);
+                    if (element.hasClass('feed-form__checkbox')) {
+                        error.appendTo('.feed-form__error-box_policy_reviews');
+                    }
                   }
             },
             rules: {
@@ -255,6 +278,9 @@ $(document).ready(function(){
                     required: true,
                     rangelength: [7, 500], 
                     justcomment: true                        
+                },
+                policy: {
+                    required: true,
                 }
             },
             messages: {
@@ -278,7 +304,8 @@ $(document).ready(function(){
                     required: "Напишите отзыв",
                     rangelength: "Введите от {7} до {500} символов",
                     justcomment: "Ссылки запрещены"
-                }
+                },
+                policy: "Согласитесь с политикой конфиденциальности" 
             } 
         });
 

@@ -191,6 +191,18 @@
         &__succes-link {
             font-size: 18px;
         }
+
+        &__policy {
+            align-items: center;
+            justify-content: center;
+            font-size: 13px;
+            max-width: 100%; 
+            line-height: 100%; 
+            
+            span {
+                margin-left: 15px;
+            }
+        }
     }
 
     @media (max-width: 375px) {
@@ -199,6 +211,13 @@
 
             &__close {
                 top: 8px;  
+            }
+
+            &__policy {
+                
+                span {
+                    max-width: 190px;
+                }
             }
         }
     }

@@ -227,6 +227,13 @@
                 }
             }
         }
+
+        &__error-box {
+
+            &_policy {
+                text-align: unset;
+            }
+         }
     }
 
     #datepicker {

@@ -116,6 +116,11 @@
         &_denied {
             margin-top: 0;
         }
+
+        &_policy {
+            margin-top: 5px;
+            text-align: center;
+        }
     }
 
     &__item {
@@ -212,6 +217,11 @@ input[type="radio"] {
     border: 1px solid rgb(0, 0, 0);
 }
 
+input[type="checkbox"] {
+    accent-color: $main-color; 
+    outline: unset;
+}
+
 input#reviews-denied {
     accent-color: rgb(0 0 0);
 }
@@ -244,26 +254,12 @@ input.instructions-radio:checked + .feed-form__radio-block, input.theme-radio:ch
 label.error {
     margin-top: 12px;
     color: #1a43c9;
-    font-size: 17px;
+    font-size: 15px;
     line-height: 90%;
     letter-spacing: -0.02em;
 }
 
-input#sign-nickname, input#theme-nickname, input#reviews-nickname {
-    /* position: relative; */
 
-    /* &::placeholder {
-        display: block;
-        position: absolute;
-        top: 50%;
-        max-width: 400px;
-        transform: translateY(-20%);
-    } */
-}
-
-input[type="text"]::-moz-placeholder { /* Firefox */
-    /* vertical-align: text-top;  */ 
-  }
 
 // fade placeholder
 

@@ -39,6 +39,12 @@
                 <label for="sign-time" class="feed-form__label">Укажите удобное для вас время:</label>
                 <input type="text" name="time" class="feed-form__input" id="sign-time" placeholder="Например: 14:30">
 
+                <div class="modal__policy">
+                    <input class="feed-form__checkbox" required name="policy" type="checkbox">
+                    <span>Я согласен(а) с <a target="_blank" href="pages/policy.html">политикой конфиденциальности</a></span>
+                </div>
+                <div class="feed-form__error-box feed-form__error-box_policy feed-form__error-box_policy_sign"></div>
+
                 <button id="modal-sign-button" class="button button_mt40">ОТправить заявку</button>
             </form>
         </div>
@@ -105,6 +111,13 @@
                 </div>
                 <label class="feed-form__label" for="reviews-textarea">Текст отзыва:</label>
                 <textarea id="reviews-textarea" name="review"  class="feed-form__input feed-form__input_textarea" placeholder="Введите Ваш отзыв"></textarea>
+
+                <div class="modal__policy">
+                    <input class="feed-form__checkbox" required name="policy" type="checkbox">
+                    <span>Я согласен(а) с <a target="_blank" href="pages/policy.html">политикой конфиденциальности</a></span>
+                </div>
+                <div class="feed-form__error-box feed-form__error-box_policy feed-form__error-box_policy_reviews"></div>
+
                 <button id="modal-reviews-button" class="button button_mt40">ОТправить Отзыв</button>
         </form>
     </div>
@@ -209,6 +222,12 @@
             <label class="feed-form__label" for="theme-email">Ваш email:</label>
             <input id="theme-email" name="email" type="email" class="feed-form__input" placeholder="Введите Ваш email" autocomplete="on">
 
+            <div class="modal__policy">
+                <input class="feed-form__checkbox" required name="policy" type="checkbox">
+                <span>Я согласен(а) с <a target="_blank" href="pages/policy.html">политикой конфиденциальности</a></span>
+            </div>
+            <div class="feed-form__error-box feed-form__error-box_policy feed-form__error-box_policy_theme"></div>
+
             <button id="modal-theme-button" class="button button_mt75">забронировать место</button>
         </form> 
     </div>  
@@ -295,6 +314,12 @@
                     <input class="feed-form__input feed-form__input_social" type="text" name="social" id="instruction-social" placeholder="Telegram  /  Instagram  /  WhatsApp  /  Viber"> 
                 <label class="feed-form__label" for="instructions-email">Ваш email:</label>
                 <input id="instructions-email" name="email" type="email" class="feed-form__input" placeholder="Введите Ваш email" autocomplete="on">
+
+                <div class="modal__policy">
+                    <input class="feed-form__checkbox" required name="policy" type="checkbox">
+                    <span>Я согласен(а) с <a  target="_blank" href="pages/policy.html">политикой конфиденциальности</a></span>
+                </div>
+                <div class="feed-form__error-box feed-form__error-box_policy feed-form__error-box_policy_instruction"></div>
 
                 <button id="modal-instructions-button" class="button button_mt75">Купить инструкцию</button>
             </form> 

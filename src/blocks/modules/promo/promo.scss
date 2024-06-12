@@ -6,6 +6,10 @@
         position: static;
     }
 
+    &__link {
+        text-decoration: none;
+    }
+
     &__title {
         margin: 0;
         margin-top: 79px;

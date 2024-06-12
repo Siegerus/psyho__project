@@ -115,6 +115,17 @@
         letter-spacing: -0.02em;
         color: rgba(16 16 16 / 60%);
     }
+
+    &__policy {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 auto;
+        margin-top: 15px;
+        width: 355px;
+        font-size: 14px;
+
+    }
 }
 
 /* .modal {
