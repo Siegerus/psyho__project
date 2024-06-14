@@ -31,21 +31,10 @@
         }
 
         &_pt5 {
-
             &::placeholder {
                 transform: translateY(-20%);
             }
-            
         }
-
-        /* &_multistring {
-            position: relative;
-            margin-top: 0;
-            width: 100%;
-            resize: vertical;
-            z-index: 1;
-            background-color: transparent;
-        } */
 
         &_textarea {
             height: 200px;
@@ -57,18 +46,6 @@
             }
         }
     }
-    /* &__multistring-wrap {
-        position: relative;
-        margin-top: 20px;
-        height: 65px;
-    } */
-
-    /* &__multistringDiv {
-        position: absolute;
-        top: 0;
-        padding: 5px 55px 25px 20px;
-        color: rgba(16 16 16 / 60%);
-    } */
 
     &__radio-wrapper {
         display: flex;
@@ -118,8 +95,12 @@
         }
 
         &_policy {
-            margin-top: 5px;
+            margin-top: 0;
             text-align: center;
+        }
+
+        &_radio-social {
+            margin-top: 0;
         }
     }
 
@@ -214,11 +195,11 @@ input[type="radio"] {
     background-color: #d9d9d9;
     accent-color: $main-color;
     outline: unset;
-    border: 1px solid rgb(0, 0, 0);
+    border: 1px solid rgb(0 0 0);
 }
 
 input[type="checkbox"] {
-    accent-color: $main-color; 
+    accent-color: $main-color;
     outline: unset;
 }
 
@@ -259,8 +240,6 @@ label.error {
     letter-spacing: -0.02em;
 }
 
-
-
 // fade placeholder
 
 input:focus::placeholder, textarea:focus::placeholder {
@@ -277,12 +256,11 @@ input[name="phone"] {
     }
 }
 
-//calendar
-
+// calendar
 
 #datepicker {
     margin: 20px auto 30px;
-    font-size: 20px;    
+    font-size: 20px;
 }
 
 .ui-datepicker-header {

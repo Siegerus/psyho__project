@@ -6,7 +6,7 @@ $(document).ready(function(){
         var root = $('body, html');
         let id  = $(this).attr('href');
         let top = $(id).offset().top; 
-        $(root).animate({scrollTop: top}, 400); 
+        $(root).animate({scrollTop: top}, 700); 
     });
 });
 

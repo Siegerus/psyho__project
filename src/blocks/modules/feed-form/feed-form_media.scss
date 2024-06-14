@@ -25,9 +25,7 @@
 @media (max-width: 600px) {
     .feed-form {
         &__item {
-
             &-img {
-
                 &_theme {
                     max-width: 130px;
                 }
@@ -96,13 +94,10 @@
         }
 
         &__item {
-
             &-img {
-
                 &_theme {
                     max-width: 130px;
                 }
-                
             }
 
             &-body {
@@ -229,11 +224,10 @@
         }
 
         &__error-box {
-
             &_policy {
                 text-align: unset;
             }
-         }
+        }
     }
 
     #datepicker {
@@ -242,7 +236,7 @@
 
     input#sign-date {
         width: 100%;
-        font-size: 30px;  
+        font-size: 30px;
     }
 
     input#instruction-social {
@@ -261,7 +255,6 @@
         }
 
         &__input {
-
             &_pt5 {
                 padding-right: 10px;
             }
@@ -303,9 +296,7 @@
 
 @media (max-width: 375px) {
     .feed-form {
-
         &__item {
-
             &-img {
                 max-width: 100px;
             }
@@ -314,20 +305,21 @@
 
     label#social-error {
         font-size: 16px;
-    }  
+    }
+
+    input[name="phone"] {
+
+        &::placeholder {
+            white-space: nowrap;
+        }
+    }
 }
 
 @media (max-width: 335px) {
     .feed-form {
-
         &__input {
-
             &_pt5 {
                 padding-right: 10px;
-
-                &:placeholder-shown {
-                    font-size: 22;
-                }
             }
         }
     }

@@ -1,14 +1,8 @@
-@media (max-width: 1439px){
-}
-
-@media (max-width: 1200px){
-}
-
 @media (max-width: 992px) {
     .aside {
         &__menu {
             width: 100%;
-            padding: 60px 95px 10px 95px;
+            padding: 60px 95px 10px;
         }
     }
 }
@@ -16,7 +10,7 @@
 @media (max-width: 767px) {
     .aside {
         &__menu {
-            padding: 80px 95px 10px 95px;
+            padding: 80px 95px 10px;
         }
 
         &__link {
@@ -28,7 +22,7 @@
 @media (max-width: 576px) {
     .aside {
         &__menu {
-            padding: 140px 30px 10px 30px; 
+            padding: 140px 30px 10px;
         }
 
         &__list {
@@ -55,7 +49,6 @@
 }
 
 @media (max-width: 375px) {
-
     .aside {
         &__menu {
             padding: 90px 30px;
@@ -83,5 +76,4 @@
             font-size: 16px;
         }
     }
-    
 }

@@ -185,7 +185,7 @@
         &__links {
             margin-top: 13px;
             font-size: 15px;
-            max-width: 265px;
+            max-width: 245px;
         }
 
         &__succes-link {
@@ -196,28 +196,30 @@
             align-items: center;
             justify-content: center;
             font-size: 13px;
-            max-width: 100%; 
-            line-height: 100%; 
-            
+            max-width: 100%;
+            line-height: 100%;
+
             span {
-                margin-left: 15px;
+                margin-left: 11px;
             }
         }
     }
+}
 
-    @media (max-width: 375px) {
+@media (max-width: 375px) {
+    .modal {
+        &__subtitle {
+            margin-top: 20px;
+            font-size: 18px;
+        }
+        
+        &__close {
+            top: 8px;
+        }
 
-        .modal {
-
-            &__close {
-                top: 8px;  
-            }
-
-            &__policy {
-                
-                span {
-                    max-width: 190px;
-                }
+        &__policy {
+            span {
+                max-width: 190px;
             }
         }
     }
